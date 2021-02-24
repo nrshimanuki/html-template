@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.sidebar {
+	// font-size: $FONT_SIZE;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_list {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_item:first-child .sidebar_link {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sidebar_link {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

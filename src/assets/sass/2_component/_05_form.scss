@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+textarea {
+	// border-radius: 0;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+textarea {
+	@media (min-width: #{$BREAKPOINT}) {
+		overflow-y: hidden;
+	}
+}
+
+select::-ms-expand {
+	@media (min-width: #{$BREAKPOINT}) {
+		display: none;
+	}
+}
+
+select {
+	// background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 70%, #E2E0E0 70%, #E2E0E0 100%) no-repeat 50% 50% / 100% 100%;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_group_wrapper {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_group {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	fieldset {
+		@media (min-width: #{$BREAKPOINT}) {
+			display: contents;
+		}
+	}
+	legend {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+.form_label {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_group_body {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_check {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_check_input {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_check_label,
+.wpcf7-list-item-label {
+	// position: relative;
+	// margin-left: 4px;
+	// padding-left: 12px;
+	// @media (min-width: #{$BREAKPOINT}) {
+	// 	margin-left: 0;
+	// 	padding-left: 24px;
+	// }
+	// &::before {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 3px;
+	// 	left: 0;
+	// 	width: 8px;
+	// 	height: 8px;
+	// 	border: 1px solid #695541;
+	// 	content: "";
+	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 		top: 5px;
+	// 		width: 16px;
+	// 		height: 16px;
+	// 	}
+	// }
+}
+
+.form_check_input:checked + .form_check_label,
+.wpcf7-list-item input:checked + .wpcf7-list-item-label {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	// &::after {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: -2px;
+	// 	left: 1px;
+	// 	width: 7px;
+	// 	height: 10px;
+	// 	transform: rotate(40deg);
+	// 	border-bottom: 2px solid #90755B;
+	// 	border-right: 2px solid #90755B;
+	// 	content: "";
+	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 		top: -5px;
+	// 		width: 14px;
+	// 		height: 20px;
+	// 	}
+	// }
+}
+
+#form_checkbox1,
+#form_checkbox2,
+.wpcf7-list-item.first input {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_control {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.form_select_wrapper {
+	// display: inline-block;
+	// position: relative;
+	// background: transparent;
+	// @media (min-width: #{$BREAKPOINT}) {
+	// }
+	// &::after {
+	// 	@include element();
+	// 	@include arrow(4,4,1,#444343,135);
+	// 	top: 7px;
+	// 	right: 9px;
+	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 		@include arrow(6,6,1,#444343,135);
+	// 		top: 13px;
+	// 		right: 18px;
+	// 	}
+	// }
+}
+
+.form_control_select {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

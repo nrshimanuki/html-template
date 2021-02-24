@@ -1,0 +1,36 @@
+.DS_Store
+.htaccess
+.htpasswd
+Thumbs.db
+node_modules
+sftp-config.json
+src/assets/img
+public/assets/css/sourcemaps
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Applications
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# WordPress
+public/wp/*
+!public/wp/wp-content/
+public/wp/wp-content/*
+!public/wp/wp-content/plugins/
+!public/wp/wp-content/themes/
+public/wp/wp-content/plugins/akismet/
+public/wp/wp-content/plugins/hello.php
+public/wp/wp-content/themes/twenty*/

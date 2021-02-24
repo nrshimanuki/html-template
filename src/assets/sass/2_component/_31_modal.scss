@@ -1,0 +1,54 @@
+// @charset "UTF-8";
+
+// .modal_area {
+// 	display: none;
+// 	position: fixed;
+// 	z-index: 10;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .modal_bg {
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: rgba(30,30,30,0.9);
+// }
+
+// .modal_wrapper {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	width: 90%;
+// 	transform: translate(-50%,-50%);
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: auto;
+// 	}
+// }
+
+// .modal_body {
+// 	position: relative;
+// }
+
+// .modal_body img {
+// 	width: 100%;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: auto;
+// 		max-width: none;
+// 	}
+// }
+
+// .modal_open:hover {
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		cursor: pointer;
+// 	}
+// }
+
+// .modal_close {
+// 	position: absolute;
+// 	top: 0.5rem;
+// 	right: 1rem;
+// 	font-size: 2em;
+// 	cursor: pointer;
+// }

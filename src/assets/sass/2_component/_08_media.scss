@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.media_block {
+	@media (min-width: #{$BREAKPOINT}) {
+		@include flex();
+	}
+	&.reverse {
+		@media (min-width: #{$BREAKPOINT}) {
+			flex-direction: row-reverse;
+		}
+	}
+	// &::after {
+	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 		width: 24%;
+	// 		display: block;
+	// 		content: '';
+	// 	}
+	// }
+}
+
+.media_image {
+	text-align: center;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	img {
+		@media (min-width: #{$BREAKPOINT}) {
+			width: auto;
+			max-height: 100%;
+		}
+	}
+}
+
+.media_body {
+	@media (min-width: #{$BREAKPOINT}) {
+		flex: 1 1 0%
+	}
+}
+
+.media_inline {
+	@include flex_inline();
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.list {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.list_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.list_item:first-child .list_link {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.list_link {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

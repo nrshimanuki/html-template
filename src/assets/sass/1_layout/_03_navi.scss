@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* navi
+------------------------------*/
+.site-nav {
+	// font-size: $FONT_SIZE;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site-nav_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site-nav_list {
+	@media (min-width: #{$BREAKPOINT}) {
+		display: flex;
+	}
+}
+
+.site-nav_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	& + .site-nav_item {
+		margin-left: 10px;
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+.site-nav_link {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

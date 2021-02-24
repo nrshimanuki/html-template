@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.table_wrap {
+	overflow-x: scroll;
+	width: 100%;
+	@media (min-width: #{$BREAKPOINT}) {
+		overflow-x: unset;
+		-ms-overflow-style: none;
+	}
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.th {
+	vertical-align: top;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.td {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.thead {
+	.th {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+	.td {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}
+
+.tbody {
+	.th {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+	.td {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}
+
+.tfoot {
+	.th {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+	.td {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		.inner {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}

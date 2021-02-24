@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.site-header {
+	// position: fixed;
+	// z-index: 100;
+	// top: 0;
+	// width: 100%;
+	// font-size: $FONT_SIZE;
+	@media (min-width: #{$BREAKPOINT}) {
+		// position: static;
+	}
+}
+
+.site-header_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+		@include content_inner();
+	}
+}
+
+.site-branding {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site-logo {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	img {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+.site-title {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site-description {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

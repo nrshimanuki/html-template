@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	text-size-adjust: none;
+	color: $FONT_COLOR;
+	font-family: $FONT;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+main {
+	display: block;
+}
+p {
+	font-size: $FONT_SIZE;
+	line-height: $LINE_HEIGHT;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+ol,
+ul {
+	list-style: none;
+}
+a {
+	color: $LINK_COLOR;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+a:link {
+	// color: $LINK_COLOR;
+}
+a:visited {
+	// color: $LINK_COLOR;
+}
+a:hover {
+	// color: $LINK_COLOR;
+}
+a:active {
+	// color: $LINK_COLOR;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+input,
+textarea {
+	font-size: 1.6rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+textarea,
+select {
+	appearance: none;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	cursor: pointer;
+}
+
+/*======================================
+Clearfix
+======================================*/
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+}

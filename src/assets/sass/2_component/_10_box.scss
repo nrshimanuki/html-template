@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.info_box {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.info_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	._title {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	._tel {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	._time {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}

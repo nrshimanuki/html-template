@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.site-footer {
+	// font-size: $FONT_SIZE;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site-footer_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+		@include content_inner();
+	}
+}
+
+
+/* Copyright
+------------------------------*/
+.copyright {
+	display: block;
+	font-size: 1rem;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

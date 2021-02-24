@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.page_head {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.page_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	._sub {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+.primary_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.secondary_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.basic_headline {
+	// margin-bottom: 10px;
+	// font-size: $FONT_SIZE;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.sction_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.big_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.small_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

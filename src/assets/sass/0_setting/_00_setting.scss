@@ -1,0 +1,88 @@
+@charset "UTF-8";
+// /*
+// Theme Name: template_theme
+// */
+
+// File path
+//--------------------------------
+$IMG_PATH: '/assets/img';
+// $IMG_PATH: '/wp/wp-content/themes/_s_theme/assets/img';
+
+
+// Breakpoint
+//--------------------------------
+$MAX_BREAKPOINT: '767px';
+$BREAKPOINT: '768px';
+
+
+// Layout
+//--------------------------------
+$CONTENT_WIDTH: 960px;
+$WIDE_WIDTH: 1280px;
+
+
+// Font
+//--------------------------------
+
+// @import url("http://fonts.googleapis.com/earlyaccess/notosansjp.css");
+// <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
+// @import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+// <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+
+
+// @font-face {
+// 	font-family: 'Noto Sans JP';
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-display: swap;
+// 	src: local("Noto Sans CJK JP"),
+// 	local("Noto Sans JP"),
+// 	url(../fonts/NotoSansCJKjp-Bold.woff2) format('woff2'),
+// 	url(../fonts/NotoSansCJKjp-Bold.woff) format('woff'),
+// 	url(../fonts/NotoSansCJKjp-Bold.otf) format('opentype');
+// }
+
+$FONT: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+// $FONT_SERIF: "游明朝体", "Yu Mincho", YuMincho, serif;
+// $FONT_WEIGHT: 500;
+// $WEB_FONT: "NotoSansCJKjp", sans-serif;
+// $WEB_FONT: "Noto Sans Japanese", sans-serif;
+
+$FONT_COLOR: #333;
+$FONT_SIZE: 1.6rem;
+$FONT_SIZE_SP: 1.4rem;
+$LINE_HEIGHT: 1.5;
+$LINK_COLOR: #3af;
+
+// // 和欧混植、Helvetica優先、游ゴシックなし
+// $FONT_1: "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+// // 和欧混植、Helvetica優先、游ゴシック優先
+// $FONT_2: "Helvetica Neue", Helvetica, "游ゴシック", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+// // 和欧混植、Verdana優先、游ゴシックなし
+// $FONT_3: Verdana, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+// // 和欧混植、Verdana優先、游ゴシック優先
+// $FONT_4: Verdana, "游ゴシック", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+// // 和文のみ、游ゴシックなし
+// $FONT_5: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+// // 和文のみ、游ゴシック優先
+// $FONT_6: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+
+// // 和欧混植、Times New Roman優先、游明朝なし
+// $FONT_SERIF_1: "Times New Roman", "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+// // 和欧混植、Times New Roman優先、游明朝優先
+// $FONT_SERIF_2: "Times New Roman", "游明朝", "YuMincho", "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+// // 和欧混植、Georgia優先、游明朝なし
+// $FONT_SERIF_3: Georgia, "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+// // 和欧混植、Georgia優先、游明朝優先
+// $FONT_SERIF_4: Georgia, "游明朝", "YuMincho", "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+// // 和文のみ、游明朝なし
+// $FONT_SERIF_5: "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+// // 和文のみ、游明朝優先
+// $FONT_SERIF_6: "游明朝", "YuMincho", "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+
+
+// Dark theme
+//------------------------------
+$BACKGROUND_DARK: #121212;
+$COLOR_DARK: #FAF8F7;

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.site-menu {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.menu_bg {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(50,50,50,.5);
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+/* menu button
+------------------------------*/
+.l_menu_button {
+	position: fixed;
+	z-index: 200;
+	top: 15px;
+	right: 15px;
+	transition: all .2s;
+	transform-origin: 0 0;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+.l_menu_button_wrapper {
+	width: 20px;
+	height: 18px;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	.button_bar {
+		display: block;
+		margin-bottom: 5px;
+		width: 20px;
+		height: 1px;
+		background: #FFF;
+		transition: all .2s;
+		transform-origin: 0 0;
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	&.open {
+		.button_bar.top {
+			width: 23px;
+			transform: translate(0, 0) rotate(40deg);
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+		.button_bar.middle {
+			opacity: 0;
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+		.button_bar.bottom {
+			width: 23px;
+			transform: translate(0, 3px) rotate(-40deg);
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}
+
+
+/* menu
+------------------------------*/
+.l_menu_container {
+	position: fixed;
+	z-index: 101;
+	top: 0;
+	width: 100%;
+	font-size: $FONT_SIZE;
+	transform: translateY(-200px);
+	transition-duration: .4s;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	&.open {
+		transform: translateY(0);
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+.l_menu_list {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+.l_menu_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+.l_menu_link {
+	padding: 20px;
+	display: block;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

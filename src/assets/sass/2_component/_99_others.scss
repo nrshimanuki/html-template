@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* Lead
+------------------------------*/
+.lead_area {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+/* Remark
+------------------------------*/
+.remark_block {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+/* chat
+------------------------------*/
+.chat_block {
+	// position: fixed;
+	// right: 0;
+	// bottom: 0;
+	// padding: 10px;
+	// width: 200px;
+	// height: 50px;
+	// background: #039;
+	// border-radius: 10px 10px 0 0;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+.chat_toggle {
+	// position: absolute;
+	// top: 5px;
+	// right: 10px;
+	// width: 30px;
+	// height: 30px;
+	// border: 1px solid #FFF;
+	// color: #FFF;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	&::before,
+	&::after {
+		// display: block;
+		// position: absolute;
+		// z-index: 2;
+		// top: 50%;
+		// left: 50%;
+		// background-color: #FFF;
+		// border-radius: 6px;
+		// content: '';
+		// transform: translate(-50%,-50%);
+		// transition: all ease 0.2s;
+	}
+	&::before {
+		// width: 12px;
+		// height: 3px;
+	}
+	&::after {
+		// width: 3px;
+		// height: 12px;
+	}
+	&:hover {
+		// cursor: pointer;
+	}
+}
+.chat_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+.chat_title {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+/* Page top
+------------------------------*/
+.pagetop_wrap {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+#pagetop {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+/* Googlemap
+------------------------------*/
+.googlemap {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	iframe {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
+
+
+/* Scrollbar
+------------------------------*/
+// .mCSB_inside>.mCSB_container {
+// 	margin-right: 30px;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		margin-right: 60px;
+// 	}
+// }
+// .mCSB_scrollTools {
+// 	width: 15px;
+// 	opacity: 1;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+// .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+// 	width: 15px;
+// 	background: #B51700;
+// 	border-radius: 0;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+// .mCSB_scrollTools .mCSB_draggerRail {
+// 	width: 15px;
+// 	background: #FFF;
+// 	border-radius: 0;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+
+/* Animation
+------------------------------*/
+// .animation {
+// 	opacity: 0;
+// 	animation-name: fadein_up;
+// 	animation-duration: 1.5s;
+// 	animation-fill-mode: forwards;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 	}
+// }
+// @keyframes fadein_up {
+// 	from {
+// 		opacity: 0;
+// 		transform: translateX(-100%);
+// 	}
+// 	to {
+// 		opacity: 1;
+// 		transform: translateX(-50%);
+// 	}
+// }

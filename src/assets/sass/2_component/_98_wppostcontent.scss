@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.post {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-header {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-title {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-meta {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-date {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-category {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-image {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-img {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-caption {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.entry-footer {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+/*----- entry content -----*/
+.entry-content {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+
+	/* headline */
+	h1 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	h2 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	h3 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	h4 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	h5 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+	h6 {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+
+	/* image */
+	img {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+
+	/* text */
+	p {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+
+	/* list */
+	ol {
+		padding-left: 1em;
+		list-style: decimal;
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		li {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+	ul {
+		padding-left: 1em;
+		list-style: disc;
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		li {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+			ul {
+				list-style: circle;
+			}
+		}
+	}
+
+	/* link */
+	a {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		&:hover {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+
+	/* table */
+	table {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		th {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+		td {
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}
+
+
+/*---- ページナビ -----*/
+.page-numbers {
+	margin-top: 20px;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	li {
+		display: inline-block;
+	}
+	span,
+	a {
+		display: block;
+		margin: 4px;
+		padding: 8px 10px;
+		background: #FFA74D;
+		border: 1px solid #FFA74D;
+		color: #fff;
+		font-size: 1.4rem;
+		line-height: 1;
+		text-decoration: none;
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+		&.current,
+		&:hover {
+			color: #FFA74D;
+			background: #fff;
+			border-color: #FFA74D;
+			@media (min-width: #{$BREAKPOINT}) {
+			}
+		}
+	}
+}
