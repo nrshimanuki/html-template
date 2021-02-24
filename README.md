@@ -1,4 +1,4 @@
-# Download the repository
+# Getting started
 
 ```
 cd
