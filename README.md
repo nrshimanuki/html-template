@@ -1,4 +1,4 @@
-# Clone the repository
+# Download the repository
 
 ```
 cd
