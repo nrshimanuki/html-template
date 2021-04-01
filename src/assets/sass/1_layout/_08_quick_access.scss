@@ -1,37 +1,32 @@
 @charset "UTF-8";
 
-/* breadcrumb
+/* quick_access
 ------------------------------*/
-.bread {
+.quick_access {
+	// position: fixed;
+	// bottom: 0;
+	// width: 100%;
+	@media (min-width: #{$BREAKPOINT}) {
+		// position: static;
+	}
+}
+
+.quick_inner {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.bread_inner {
-	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
-		@include content_inner();
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-.bread_list {
-	display: flex;
+.quick_list {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.bread_item {
+.quick_item {
 	@media (min-width: #{$BREAKPOINT}) {
-	}
-	&:nth-child(1) {
-		@media (min-width: #{$BREAKPOINT}) {
-		}
 	}
 }
 
-.bread_link {
+.quick_item_link {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }

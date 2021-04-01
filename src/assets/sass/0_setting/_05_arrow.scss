@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+// arrow
+//------------------------------
+@mixin arrow_simple($width,$height,$borderWidth,$borderColor,$deg:0) {
+	width: $width + px;
+	height: $height + px;
+	border-top: $borderWidth + px solid $borderColor;
+	border-right: $borderWidth + px solid $borderColor;
+	transform: rotate($deg + deg);
+}
+
+
+// arrow
+//--------------------------------
+@mixin arrow($width:0, $height:0, $background:#FFF, $rotate:0) {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: $width + px;
+	height: $height + px;
+	background: $background;
+	border-radius: 10em;
+	transform-origin: calc(100% - 1px) 50%;
+	transform: translate(-50%, -50%) rotate($rotate + deg);
+}
+
+
+// triangle
+//------------------------------
+// top
+@mixin triangle_top($bottom,$left,$right,$color) {
+	border-left: $left + px solid transparent;
+	border-bottom: $bottom + px solid $color;
+	border-right: $right + px solid transparent;
+}
+
+// left
+@mixin triangle_left($right,$top,$bottom,$color) {
+	border-top: $top + px solid transparent;
+	border-right: $right + px solid $color;
+	border-bottom: $bottom + px solid transparent;
+}
+
+// right
+@mixin triangle_right($left,$top,$bottom,$color) {
+	border-top: $top + px solid transparent;
+	border-left: $left + px solid $color;
+	border-bottom: $bottom + px solid transparent;
+}
+
+// bottom
+@mixin triangle_bottom($top,$left,$right,$color) {
+	border-left: $left + px solid transparent;
+	border-top: $top + px solid $color;
+	border-right: $right + px solid transparent;
+}

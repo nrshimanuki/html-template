@@ -1,46 +1,94 @@
 @charset "UTF-8";
 
+/* page_head
+------------------------------*/
 .page_head {
 	@media (min-width: #{$BREAKPOINT}) {
+	}
+
+	$setBG: about, contact, news;
+	@each $i in $setBG {
+		&.__page_#{$i} {
+			background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_sp.jpg');
+			@media (min-width: #{$BREAKPOINT}) {
+				background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_pc.jpg');
+			}
+		}
 	}
 }
 
 .page_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
-	._sub {
-		@media (min-width: #{$BREAKPOINT}) {
-		}
+}
+
+
+
+/* single_page_headline
+------------------------------*/
+.single_page_headline {
+	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* primary_headline
+------------------------------*/
 .primary_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* secondary_headline
+------------------------------*/
 .secondary_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* basic_headline
+------------------------------*/
 .basic_headline {
-	// margin-bottom: 10px;
-	// font-size: $FONT_SIZE;
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* normally_headline
+------------------------------*/
+.normally_headline {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+
+/* sction_headline
+------------------------------*/
 .sction_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* big_headline
+------------------------------*/
 .big_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* small_headline
+------------------------------*/
 .small_headline {
 	@media (min-width: #{$BREAKPOINT}) {
 	}

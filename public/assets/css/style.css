@@ -7,10 +7,6 @@ Reset
 ::after {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
 	font-size: 1em;
 }
 
@@ -19,12 +15,13 @@ html {
 }
 
 body {
+	margin: 0;
 	-webkit-text-size-adjust: none;
 	   -moz-text-size-adjust: none;
 	    -ms-text-size-adjust: none;
 	        text-size-adjust: none;
 	color: #333;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
@@ -33,16 +30,69 @@ main {
 	display: block;
 }
 
-p {
-	font-size: 1.6rem;
-	line-height: 1.5;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+h1 {
+	margin: 5px 0;
+	font-size: 3rem;
+}
+
+h2 {
+	margin: 5px 0;
+	font-size: 2.8rem;
+}
+
+h3 {
+	margin: 5px 0;
+	font-size: 2.4rem;
+}
+
+h4, h5, h6 {
+	margin: 5px 0;
+	font-size: 2rem;
 }
 
 ol,
 ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+li {
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+dl {
+	margin: 0;
+}
+
+dt,
+dd {
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	vertical-align: top;
+}
+
+th,
+td {
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+p {
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 a {
@@ -54,10 +104,11 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 input,
+select,
 textarea {
 	font-size: 1.6rem;
 }
@@ -73,108 +124,158 @@ input[type="date"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-textarea,
-select {
+select,
+textarea {
 	-webkit-appearance: none;
 	   -moz-appearance: none;
 	        appearance: none;
+	border-radius: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+textarea {
+	overflow-y: hidden;
 }
 
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
+select,
 button {
 	cursor: pointer;
 }
 
 /*======================================
-Clearfix
+Layout
 ======================================*/
+/* PC Only, SP Only
+------------------------------*/
+@media (min-width: 768px) {
+	.sp_only {
+		display: none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.pc_only {
+		display: none !important;
+	}
+}
+
+/* Clearfix
+------------------------------*/
 .clearfix:after {
 	display: block;
 	clear: both;
 	content: "";
 }
 
-/*======================================
-Layout
-======================================*/
 /* Body
 ------------------------------*/
-@media (min-width: 768px) {
-	.site-content {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 960px;
-	}
+body.__menu_open {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 }
 
-/* Only PC, Only SP
-------------------------------*/
-@media (max-width: 767px) {
-	.only_pc {
-		display: none !important;
-	}
+.site_content {
+	padding-top: 80px;
 }
 
 @media (min-width: 768px) {
-	.only_sp {
-		display: none !important;
+	.site_content {
+		padding-top: 0;
 	}
 }
 
-/* Utility
-------------------------------*/
-.mt0 {
-	margin-top: 0 !important;
-}
-
-.ml0 {
-	margin-left: 0 !important;
-}
-
-.mr0 {
-	margin-right: 0 !important;
-}
-
-.mb0 {
-	margin-bottom: 0 !important;
-}
-
-.pt0 {
-	padding-top: 0 !important;
-}
-
-.pl0 {
-	padding-left: 0 !important;
-}
-
-.pr0 {
-	padding-right: 0 !important;
-}
-
-.pb0 {
-	padding-bottom: 0 !important;
+.site_container {
+	padding-bottom: 20px;
 }
 
 /*======================================
 Header
 ======================================*/
+/* site_header
+------------------------------*/
+.site_header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	background: #FFF;
+}
+
 @media (min-width: 768px) {
-	.site-header_inner {
+	.site_header {
+		position: static;
+	}
+}
+
+.site_header_inner {
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site_header_inner {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
 	}
+}
+
+/* site_branding
+------------------------------*/
+.site_description {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.site_description {
+		display: block;
+	}
+}
+
+/* site_info
+------------------------------*/
+.site_info {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.site_info {
+		display: block;
+	}
+}
+
+.site_info_link {
+	display: inline-block;
 }
 
 /*======================================
 Menu
 ======================================*/
+/* menu_bg
+------------------------------*/
 .menu_bg {
 	display: none;
 	position: fixed;
-	z-index: 100;
+	z-index: 101;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -182,109 +283,239 @@ Menu
 	background: rgba(50, 50, 50, 0.5);
 }
 
-/* menu button
+/* menu_button
 ------------------------------*/
-.l_menu_button {
+.menu_button {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: fixed;
-	z-index: 200;
-	top: 15px;
-	right: 15px;
-	-webkit-transition: all .2s;
-	transition: all .2s;
-	-webkit-transform-origin: 0 0;
-	        transform-origin: 0 0;
+	z-index: 300;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	width: 75px;
+	height: 75px;
+	background: #3af;
+	border: 0;
+	outline: 0;
 }
 
-.l_menu_button_wrapper {
-	width: 20px;
-	height: 18px;
+.menu_button_inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 5px;
 }
 
-.l_menu_button_wrapper .button_bar {
+.menu_button_bar {
 	display: block;
-	margin-bottom: 5px;
-	width: 20px;
-	height: 1px;
+	width: 23px;
+	height: 2px;
 	background: #FFF;
-	-webkit-transition: all .2s;
-	transition: all .2s;
+	border-radius: 15px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 	-webkit-transform-origin: 0 0;
 	        transform-origin: 0 0;
 }
 
-.l_menu_button_wrapper.open .button_bar.top {
-	width: 23px;
-	-webkit-transform: translate(0, 0) rotate(40deg);
-	        transform: translate(0, 0) rotate(40deg);
+.menu_button_bar + .menu_button_bar {
+	margin-top: 6px;
 }
 
-.l_menu_button_wrapper.open .button_bar.middle {
+.menu_button_text {
+	margin-top: 10px;
+	color: #3af;
+	color: #FFF;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+body.__menu_open .menu_button_bar.__top {
+	width: 36px;
+	-webkit-transform: translate(8px, 5px) rotate(45deg);
+	        transform: translate(8px, 5px) rotate(45deg);
+}
+
+body.__menu_open .menu_button_bar.__middle {
 	opacity: 0;
 }
 
-.l_menu_button_wrapper.open .button_bar.bottom {
-	width: 23px;
-	-webkit-transform: translate(0, 3px) rotate(-40deg);
-	        transform: translate(0, 3px) rotate(-40deg);
+body.__menu_open .menu_button_bar.__bottom {
+	width: 36px;
+	-webkit-transform: translate(7px, 14px) rotate(-45deg);
+	        transform: translate(7px, 14px) rotate(-45deg);
 }
 
-/* menu
-------------------------------*/
-.l_menu_container {
-	position: fixed;
-	z-index: 101;
-	top: 0;
-	width: 100%;
-	font-size: 1.6rem;
-	-webkit-transform: translateY(-200px);
-	        transform: translateY(-200px);
-	-webkit-transition-duration: .4s;
-	        transition-duration: .4s;
-}
-
-.l_menu_container.open {
-	-webkit-transform: translateY(0);
-	        transform: translateY(0);
-}
-
-.l_menu_link {
-	padding: 20px;
-	display: block;
+body.__menu_open .menu_button_text {
+	opacity: 0;
 }
 
 /*======================================
 Navigation
 ======================================*/
-/* navi
+/* site_nav
 ------------------------------*/
+.site_nav {
+	overflow-y: scroll;
+	position: fixed;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 75px);
+	background: #fa0;
+	opacity: 0;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	pointer-events: none;
+}
+
 @media (min-width: 768px) {
-	.site-nav_list {
+	.site_nav {
+		overflow-y: visible;
+		position: static;
+		background: none;
+		width: auto;
+		height: auto;
+		font-size: 2.2rem;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+
+body.__menu_open .site_nav {
+	z-index: 200;
+	opacity: 1;
+	pointer-events: all;
+}
+
+.site_nav_inner {
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site_nav_inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.site_nav_list {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 }
 
-.site-nav_item + .site-nav_item {
-	margin-left: 10px;
+.site_nav_item {
+	margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+	.site_nav_item {
+		margin-top: 0;
+	}
+}
+
+.site_nav_link {
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+	.site_nav_sub_list {
+		display: none;
+	}
+}
+
+.site_nav_sub_link {
+	display: inline-block;
 }
 
 /*======================================
 Breadcrumb
 ======================================*/
+/* breadcrumb
+------------------------------*/
+.bread_inner {
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.bread_inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.bread_list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 /*======================================
 Main
 ======================================*/
 /* Main
 ------------------------------*/
-/* Section
+/* wide_inner
+------------------------------*/
+@media (min-width: 768px) {
+	.wide_inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1280px;
+	}
+}
+
+/* section
 ------------------------------*/
 .section {
 	padding: 10px 0;
 }
 
-/* Content Inner
+/* content_inner
 ------------------------------*/
 .content_inner {
 	padding: 0 10px;
@@ -296,21 +527,57 @@ Main
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
 /*======================================
 Sidebar
 ======================================*/
-/*======================================
-Footer
-======================================*/
+/* sidebar
+------------------------------*/
+.sidebar {
+	padding: 10px;
+}
+
 @media (min-width: 768px) {
-	.site-footer_inner {
+	.sidebar {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
 	}
+}
+
+.sidebar_link {
+	display: inline-block;
+}
+
+/*======================================
+Footer
+======================================*/
+/* site_footer
+------------------------------*/
+.site_footer_inner {
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+	.site_footer_inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* footer_nav
+------------------------------*/
+.footer_nav_link {
+	display: inline-block;
 }
 
 /* Copyright
@@ -321,63 +588,211 @@ Footer
 }
 
 /*======================================
-Component
+Quick Access
 ======================================*/
-/* Headline
+/* quick_access
 ------------------------------*/
-/* Button
+/*======================================
+Page Top
+======================================*/
+/* pagetop
 ------------------------------*/
-/* Icon
+#pagetop {
+	display: none;
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+	z-index: 100;
+}
+
+/*======================================
+Background
+======================================*/
+/* bg
 ------------------------------*/
-/* List
+/*======================================
+Headline
+======================================*/
+/* page_head
 ------------------------------*/
-/* Form
-------------------------------*/
-@media (min-width: 768px) {
-	textarea {
-		overflow-y: hidden;
-	}
+.page_head.__page_about {
+	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/about/about_head_sp.jpg");
 }
 
 @media (min-width: 768px) {
-	select::-ms-expand {
-		display: none;
+	.page_head.__page_about {
+		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/about/about_head_pc.jpg");
 	}
 }
 
+.page_head.__page_contact {
+	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/contact/contact_head_sp.jpg");
+}
+
+@media (min-width: 768px) {
+	.page_head.__page_contact {
+		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/contact/contact_head_pc.jpg");
+	}
+}
+
+.page_head.__page_news {
+	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/news/news_head_sp.jpg");
+}
+
+@media (min-width: 768px) {
+	.page_head.__page_news {
+		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/news/news_head_pc.jpg");
+	}
+}
+
+/* single_page_headline
+------------------------------*/
+/* primary_headline
+------------------------------*/
+/* secondary_headline
+------------------------------*/
+/* basic_headline
+------------------------------*/
+/* normally_headline
+------------------------------*/
+/* sction_headline
+------------------------------*/
+/* big_headline
+------------------------------*/
+/* small_headline
+------------------------------*/
+/*======================================
+Icon
+======================================*/
+/* icon
+------------------------------*/
+/* icon_arrow
+------------------------------*/
+.icon_arrow {
+	display: inline-block;
+	position: relative;
+}
+
+.icon_arrow::before, .icon_arrow::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	width: 8px;
+	height: 2px;
+	background: #000;
+	border-radius: 4px;
+	-webkit-transform-origin: left top;
+	        transform-origin: left top;
+}
+
+.icon_arrow::before {
+	-webkit-transform: rotate(-140deg);
+	        transform: rotate(-140deg);
+}
+
+.icon_arrow::after {
+	-webkit-transform: rotate(-220deg);
+	        transform: rotate(-220deg);
+}
+
+.icon_arrow._circle {
+	padding: 5px;
+	width: 15px;
+	height: 15px;
+	background: #f3f;
+	border-radius: 50%;
+}
+
+.icon_arrow._circle::before, .icon_arrow._circle::after {
+	background: #FFF;
+}
+
+/* badge
+------------------------------*/
+/*======================================
+List
+======================================*/
+/* list
+------------------------------*/
+.list_link {
+	display: inline-block;
+}
+
+/*======================================
+Button
+======================================*/
+/* button
+------------------------------*/
+/* back_button
+------------------------------*/
+/*======================================
+Table
+======================================*/
+/*======================================
+Form
+======================================*/
+/* form
+------------------------------*/
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+	padding: 5px;
+	border: 1px solid #9FA0A0;
+}
+
+/* form_group_container
+------------------------------*/
+/* form_group
+------------------------------*/
 @media (min-width: 768px) {
 	.form_group fieldset {
 		display: contents;
 	}
 }
 
-/* Table
+/* form_control
 ------------------------------*/
-.table_wrap {
-	overflow-x: scroll;
-	width: 100%;
+.form_control_select {
+	background: transparent;
+}
+
+/* form_check
+------------------------------*/
+/* wpcf7
+------------------------------*/
+/* form_required
+------------------------------*/
+.form_required {
+	color: #F00;
 }
 
 @media (min-width: 768px) {
-	.table_wrap {
-		overflow-x: unset;
-		-ms-overflow-style: none;
+	.form_required {
+		font-size: 1.6rem;
 	}
 }
 
-.table {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-.th {
-	vertical-align: top;
-}
-
-/* Keyvisual
+/* err message
 ------------------------------*/
-/* Media
+/*======================================
+Key Visual
+======================================*/
+/*======================================
+Lead
+======================================*/
+/* lead
 ------------------------------*/
+/*======================================
+Media
+======================================*/
 @media (min-width: 768px) {
 	.media_block {
 		display: -webkit-box;
@@ -436,8 +851,9 @@ Component
 	        align-items: center;
 }
 
-/* Card
-------------------------------*/
+/*======================================
+Card
+======================================*/
 @media (min-width: 768px) {
 	.card_list {
 		display: -webkit-box;
@@ -465,20 +881,19 @@ Component
 	}
 }
 
-/* Box
-------------------------------*/
-/* Video
-------------------------------*/
+/*======================================
+Box
+======================================*/
+/*======================================
+iframe
+======================================*/
 /* YouTube
 ------------------------------*/
-/*======================================
-Slider
-======================================*/
 /*======================================
 Modal
 ======================================*/
 /*======================================
-WordPress post content
+WordPress Post Entry
 ======================================*/
 /*----- entry content -----*/
 .entry-content {
@@ -537,16 +952,16 @@ WordPress post content
 /*======================================
 Others
 ======================================*/
-/* Lead
-------------------------------*/
-/* Remark
-------------------------------*/
 /* chat
-------------------------------*/
-/* Page top
 ------------------------------*/
 /* Googlemap
 ------------------------------*/
+/*======================================
+Slider
+======================================*/
+/*======================================
+Scrollbar
+======================================*/
 /* Scrollbar
 ------------------------------*/
 /* Animation
@@ -554,9 +969,7 @@ Others
 /*======================================
 Pages
 ======================================*/
-/* index
-------------------------------*/
-/* pages
+/* home
 ------------------------------*/
 /* about
 ------------------------------*/

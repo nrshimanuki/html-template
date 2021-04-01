@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* icon
+------------------------------*/
+.icon {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+/* icon_arrow
+------------------------------*/
+.icon_arrow {
+	display: inline-block;
+	position: relative;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: -5px;
+		width: 8px;
+		height: 2px;
+		background: #000;
+		border-radius: 4px;
+		transform-origin: left top;
+	}
+	&::before {
+		transform: rotate(-140deg);
+	}
+	&::after {
+		transform: rotate(-220deg);
+	}
+
+	&._circle {
+		padding: 5px;
+		width: 15px;
+		height: 15px;
+		background: #f3f;
+		border-radius: 50%;
+		&::before,
+		&::after {
+			background: #FFF;
+		}
+	}
+}
+
+
+/* badge
+------------------------------*/
+.badge {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

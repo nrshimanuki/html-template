@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* pagetop
+------------------------------*/
+#pagetop {
+	display: none;
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+	z-index: 100;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}

@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+/* sidebar
+------------------------------*/
 .sidebar {
-	// font-size: $FONT_SIZE;
+	padding: 10px;
 	@media (min-width: #{$BREAKPOINT}) {
+		@include content_inner();
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -24,14 +29,14 @@
 .sidebar_item {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
-}
-
-.sidebar_item:first-child .sidebar_link {
-	@media (min-width: #{$BREAKPOINT}) {
+	&:nth-child(1) {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
 	}
 }
 
 .sidebar_link {
+	display: inline-block;
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }

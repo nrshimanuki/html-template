@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+//------------------------------
+// percentage [px -> %]
+//------------------------------
+
+// position
+//------------------------------
+@mixin top($top, $parentWidth) {
+	top: floor((($top / $parentWidth) * 10000%)) / 100;
+}
+@mixin left($left, $parentWidth) {
+	left: floor((($left / $parentWidth) * 10000%)) / 100;
+}
+@mixin right($right, $parentWidth) {
+	right: floor((($right / $parentWidth) * 10000%)) / 100;
+}
+@mixin bottom($bottom, $parentWidth) {
+	bottom: floor((($bottom / $parentWidth) * 10000%)) / 100;
+}
+
+//negative
+@mixin top_negative($top, $parentWidth) {
+	$top_negative: floor((($top / $parentWidth) * 10000%)) / 100;
+	top: -$top_negative;
+}
+@mixin left_negative($left, $parentWidth) {
+	$left_negative: floor((($left / $parentWidth) * 10000%)) / 100;
+	left: -$left_negative;
+}
+@mixin right_negative($right, $parentWidth) {
+	$right_negative: floor((($right / $parentWidth) * 10000%)) / 100;
+	right: -$right_negative;
+}
+@mixin bottom_negative($bottom, $parentWidth) {
+	$bottom_negative: floor((($bottom / $parentWidth) * 10000%)) / 100;
+	bottom: -$bottom_negative;
+}
+
+
+// margin
+//------------------------------
+@mixin mt($marginTop, $parentWidth) {
+	margin-top: floor((($marginTop / $parentWidth) * 10000%)) / 100;
+}
+@mixin ml($marginLeft, $parentWidth) {
+	margin-left: floor((($marginLeft / $parentWidth) * 10000%)) / 100;
+}
+@mixin mr($marginRight, $parentWidth) {
+	margin-right: floor((($marginRight / $parentWidth) * 10000%)) / 100;
+}
+@mixin mb($marginBottom, $parentWidth) {
+	margin-bottom: floor((($marginBottom / $parentWidth) * 10000%)) / 100;
+}
+
+@mixin mlr($marginLeft, $marginRight, $parentWidth) {
+	margin-left: floor((($marginLeft / $parentWidth) * 10000%)) / 100;
+	margin-right: floor((($marginRight / $parentWidth) * 10000%)) / 100;
+}
+
+@mixin m($marginTop, $marginRight, $marginBottom, $marginLeft, $parentWidth) {
+	$mt: floor((($marginTop / $parentWidth) * 10000%)) / 100;
+	$mr: floor((($marginRight / $parentWidth) * 10000%)) / 100;
+	$mb: floor((($marginBottom / $parentWidth) * 10000%)) / 100;
+	$ml: floor((($marginLeft / $parentWidth) * 10000%)) / 100;
+	margin: $mt $mr $mb $ml;
+}
+
+
+// padding
+//------------------------------
+@mixin pt($paddingTop, $parentWidth) {
+	padding-top: floor((($paddingTop / $parentWidth) * 10000%)) / 100;
+}
+@mixin pl($paddingLeft, $parentWidth) {
+	padding-left: floor((($paddingLeft / $parentWidth) * 10000%)) / 100;
+}
+@mixin pr($paddingRight, $parentWidth) {
+	padding-right: floor((($paddingRight / $parentWidth) * 10000%)) / 100;
+}
+@mixin pb($paddingBottom, $parentWidth) {
+	padding-bottom: floor((($paddingBottom / $parentWidth) * 10000%)) / 100;
+}
+
+@mixin plr($paddingLeft, $parentWidth) {
+	padding-left: floor((($paddingLeft / $parentWidth) * 10000%)) / 100;
+	padding-right: floor((($paddingRight / $parentWidth) * 10000%)) / 100;
+}
+
+@mixin p($paddingTop, $paddingRight, $paddingBottom, $paddingLeft, $parentWidth) {
+	$pt: floor((($paddingTop / $parentWidth) * 10000%)) / 100;
+	$pr: floor((($paddingRight / $parentWidth) * 10000%)) / 100;
+	$pb: floor((($paddingBottom / $parentWidth) * 10000%)) / 100;
+	$pl: floor((($paddingLeft / $parentWidth) * 10000%)) / 100;
+	padding: $pt $pr $pb $pl;
+}
+
+
+// width
+//------------------------------
+@mixin w($width, $parentWidth) {
+	width: floor((($width / $parentWidth) * 10000%)) / 100;
+}
+@mixin www($width, $parentWidth, $minWidth:0, $maxWidth:$width) {
+	width: floor((($width / $parentWidth) * 10000%)) / 100;
+	min-width: $minWidth;
+	max-width: $maxWidth;
+}
+
+
+// height
+//------------------------------
+@mixin h($height, $parentHeight) {
+	height: floor((($height / $parentHeight) * 10000%)) / 100;
+}
+@mixin hhh($height, $parentHeight, $minheight:0, $maxheight:$height) {
+	height: floor((($height / $parentHeight) * 10000%)) / 100;
+	min-height: $minheight;
+	max-height: $maxWidth;
+}

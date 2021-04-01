@@ -4,35 +4,82 @@
 ::before,
 ::after {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
 	font-size: 1em;
 }
 html {
 	font-size: 62.5%;
 }
 body {
+	margin: 0;
 	text-size-adjust: none;
 	color: $FONT_COLOR;
 	font-family: $FONT;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
+
 main {
 	display: block;
 }
+
+h1 {
+	margin: 5px 0;
+	font-size: 3rem;
+}
+h2 {
+	margin: 5px 0;
+	font-size: 2.8rem;
+}
+h3 {
+	margin: 5px 0;
+	font-size: 2.4rem;
+}
+h4, h5, h6 {
+	margin: 5px 0;
+	font-size: 2rem;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	font-size: $FONT_SIZE;
+	line-height: $LINE_HEIGHT;
+}
+
+dl {
+	margin: 0;
+}
+dt,
+dd {
+	margin: 0;
+	font-size: $FONT_SIZE;
+	line-height: $LINE_HEIGHT;
+}
+
+table {
+	border-collapse: collapse;
+}
+th {
+	vertical-align: top;
+}
+th,
+td {
+	font-size: $FONT_SIZE;
+	line-height: $LINE_HEIGHT;
+}
+
 p {
+	margin: 0;
 	font-size: $FONT_SIZE;
 	line-height: $LINE_HEIGHT;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
-ol,
-ul {
-	list-style: none;
-}
+
 a {
 	color: $LINK_COLOR;
 	overflow-wrap: break-word;
@@ -50,15 +97,19 @@ a:hover {
 a:active {
 	// color: $LINK_COLOR;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
-	vertical-align: bottom;
+	vertical-align: top;
 }
+
 input,
+select,
 textarea {
 	font-size: 1.6rem;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="checkbox"],
@@ -70,22 +121,33 @@ input[type="date"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-textarea,
-select {
+select,
+textarea {
 	appearance: none;
+	border-radius: 0;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance:textfield;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+textarea {
+	overflow-y: hidden;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
+select,
 button {
 	cursor: pointer;
-}
-
-/*======================================
-Clearfix
-======================================*/
-.clearfix:after {
-	display: block;
-	clear: both;
-	content: "";
 }

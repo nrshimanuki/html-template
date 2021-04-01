@@ -2,13 +2,22 @@
 
 /* Main
 ------------------------------*/
-.site-main {
+.site_main {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
 
-/* Section
+/* wide_inner
+------------------------------*/
+.wide_inner {
+	@media (min-width: #{$BREAKPOINT}) {
+		@include wide_inner();
+	}
+}
+
+
+/* section
 ------------------------------*/
 .section {
 	padding: 10px 0;
@@ -17,12 +26,14 @@
 }
 
 
-/* Content Inner
+/* content_inner
 ------------------------------*/
 .content_inner {
 	padding: 0 10px;
 	width: 100%;
 	@media (min-width: #{$BREAKPOINT}) {
 		@include content_inner();
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

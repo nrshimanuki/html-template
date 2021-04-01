@@ -5,14 +5,15 @@
 
 // File path
 //--------------------------------
-$IMG_PATH: '/assets/img';
-// $IMG_PATH: '/wp/wp-content/themes/_s_theme/assets/img';
+// $IMG_DIR: '/assets/img';
+$IMG_DIR: '/wp/wp-content/themes/tokinosasae/assets/img';
 
 
 // Breakpoint
 //--------------------------------
-$MAX_BREAKPOINT: '767px';
+$BREAKPOINT_SP: '767px';
 $BREAKPOINT: '768px';
+$BREAKPOINT_PC: '960px';
 
 
 // Layout
@@ -43,17 +44,19 @@ $WIDE_WIDTH: 1280px;
 // 	url(../fonts/NotoSansCJKjp-Bold.otf) format('opentype');
 // }
 
-$FONT: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+$FONT: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+$FONT_SERIF: "游明朝体", "Yu Mincho", YuMincho, serif;
+$FONT_COLOR: #333;
+$FONT_SIZE_SP: 1.6rem;
+$FONT_SIZE: 1.6rem;
+$LINE_HEIGHT: 1.5;
+$LINK_COLOR: #3af;
+
+// $FONT: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 // $FONT_SERIF: "游明朝体", "Yu Mincho", YuMincho, serif;
 // $FONT_WEIGHT: 500;
 // $WEB_FONT: "NotoSansCJKjp", sans-serif;
 // $WEB_FONT: "Noto Sans Japanese", sans-serif;
-
-$FONT_COLOR: #333;
-$FONT_SIZE: 1.6rem;
-$FONT_SIZE_SP: 1.4rem;
-$LINE_HEIGHT: 1.5;
-$LINK_COLOR: #3af;
 
 // // 和欧混植、Helvetica優先、游ゴシックなし
 // $FONT_1: "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
@@ -82,7 +85,15 @@ $LINK_COLOR: #3af;
 // $FONT_SERIF_6: "游明朝", "YuMincho", "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
 
 
+// Site color
+//--------------------------------
+$BASE_COLOR: #FFF;
+$MAIN_COLOR: #7D4698;
+$SUB_COLOR: #B570AB;
+$ACCENT_COLOR: #F29669;
+
+
 // Dark theme
 //------------------------------
-$BACKGROUND_DARK: #121212;
-$COLOR_DARK: #FAF8F7;
+// $BACKGROUND_DARK: #121212;
+// $COLOR_DARK: #FAF8F7;

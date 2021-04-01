@@ -1,35 +1,89 @@
 @charset "UTF-8";
 
-/* navi
+/* site_nav
 ------------------------------*/
-.site-nav {
-	// font-size: $FONT_SIZE;
+.site_nav {
+	overflow-y: scroll;
+	position: fixed;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 75px);
+	background: #fa0;
+	opacity: 0;
+	transition: all .3s;
+	pointer-events: none;
 	@media (min-width: #{$BREAKPOINT}) {
+		overflow-y: visible;
+		position: static;
+		background: none;
+		width: auto;
+		height: auto;
+		font-size: 2.2rem;
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	body.__menu_open & {
+		z-index: 200;
+		opacity: 1;
+		pointer-events: all;
 	}
 }
 
-.site-nav_inner {
+.site_nav_inner {
+	padding: 10px;
 	@media (min-width: #{$BREAKPOINT}) {
+		@include content_inner();
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
-.site-nav_list {
+.site_nav_list {
 	@media (min-width: #{$BREAKPOINT}) {
-		display: flex;
+		@include flex();
 	}
 }
 
-.site-nav_item {
+.site_nav_item {
+	margin-top: 10px;
 	@media (min-width: #{$BREAKPOINT}) {
+		margin-top: 0;
 	}
-	& + .site-nav_item {
-		margin-left: 10px;
+	&:nth-child(1) {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+
+	.__current &,
+	&:hover {
 		@media (min-width: #{$BREAKPOINT}) {
 		}
 	}
 }
 
-.site-nav_link {
+.site_nav_link {
+	display: inline-block;
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+
+// site_nav_sub_list
+.site_nav_sub_list {
+	@media (min-width: #{$BREAKPOINT}) {
+		display: none;
+	}
+}
+
+.site_nav_sub_item {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+}
+
+.site_nav_sub_link {
+	display: inline-block;
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }

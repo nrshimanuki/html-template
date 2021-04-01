@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Scrollbar
+------------------------------*/
+// .mCSB_inside>.mCSB_container {
+// 	margin-right: 30px;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		margin-right: 60px;
+// 	}
+// }
+// .mCSB_scrollTools {
+// 	width: 15px;
+// 	opacity: 1;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+// .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+// .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+// 	width: 15px;
+// 	background: #B51700;
+// 	border-radius: 0;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+// .mCSB_scrollTools .mCSB_draggerRail {
+// 	width: 15px;
+// 	background: #FFF;
+// 	border-radius: 0;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 		width: 30px;
+// 	}
+// }
+
+/* Animation
+------------------------------*/
+// .animation {
+// 	opacity: 0;
+// 	animation-name: fadein_up;
+// 	animation-duration: 1.5s;
+// 	animation-fill-mode: forwards;
+// 	@media (min-width: #{$BREAKPOINT}) {
+// 	}
+// }
+// @keyframes fadein_up {
+// 	from {
+// 		opacity: 0;
+// 		transform: translateX(-100%);
+// 	}
+// 	to {
+// 		opacity: 1;
+// 		transform: translateX(-50%);
+// 	}
+// }

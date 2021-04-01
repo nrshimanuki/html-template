@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* button
+------------------------------*/
 .button_wrap {
 	// text-align: center;
 	@media (min-width: #{$BREAKPOINT}) {
@@ -7,19 +9,23 @@
 }
 
 .button {
-	// @include button(#666, #FFF, 1rem);
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 	&:hover {
 		@media (min-width: #{$BREAKPOINT}) {
 		}
 	}
-	img {
-		@media (min-width: #{$BREAKPOINT}) {
-		}
+}
+
+.button_text {
+	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
+
+
+/* back_button
+------------------------------*/
 .back_button {
 	@media (min-width: #{$BREAKPOINT}) {
 	}

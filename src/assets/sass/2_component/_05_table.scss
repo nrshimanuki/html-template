@@ -1,23 +1,21 @@
 @charset "UTF-8";
 
 .table_wrap {
-	overflow-x: scroll;
-	width: 100%;
+	// overflow-x: scroll;
+	// width: 100%;
 	@media (min-width: #{$BREAKPOINT}) {
-		overflow-x: unset;
-		-ms-overflow-style: none;
+		// overflow-x: unset;
+		// -ms-overflow-style: none;
 	}
 }
 
 .table {
-	width: 100%;
-	border-collapse: collapse;
+	// width: 100%;
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
 .th {
-	vertical-align: top;
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }

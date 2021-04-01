@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+// pseudo
+//------------------------------
+@mixin pseudo_half($width:0, $height:0) {
+	$width: $width / 2;
+	$height: $height / 2;
+	content: '';
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+}
+@mixin pseudo($width:0, $height:0) {
+	content: '';
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+}
+
+
+// element
+//------------------------------
+@mixin element_half($width, $height) {
+	$width: $width / 2;
+	$height: $height / 2;
+	width: $width;
+	height: $height;
+}
+@mixin element_size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+
+// background size
+//------------------------------
+@mixin bg_half($bgWidth, $bgHeight) {
+	$bgWidth: $bgWidth / 2;
+	$bgHeight: $bgHeight / 2;
+	background-size: $bgWidth $bgHeight;
+}
+@mixin bg_size($bgWidth, $bgHeight) {
+	background-size: $bgWidth $bgHeight;
+}
