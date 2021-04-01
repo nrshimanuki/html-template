@@ -1,58 +1,53 @@
 @charset "UTF-8";
 
-.post {
+.entry_header {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-header {
+.entry_title {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-title {
+.entry_meta {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-meta {
+.entry_date {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-date {
+.entry_category {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-category {
+.entry_image {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-image {
+.entry_img {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-img {
+.entry_caption {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
-.entry-caption {
-	@media (min-width: #{$BREAKPOINT}) {
-	}
-}
-
-.entry-footer {
+.entry_footer {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 }
 
 
 /*----- entry content -----*/
-.entry-content {
+.entry_content {
 	@media (min-width: #{$BREAKPOINT}) {
 	}
 
@@ -145,7 +140,7 @@
 }
 
 
-/*---- ページナビ -----*/
+/*---- page navi -----*/
 .page-numbers {
 	margin-top: 20px;
 	@media (min-width: #{$BREAKPOINT}) {

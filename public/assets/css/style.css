@@ -889,6 +889,8 @@ iframe
 ======================================*/
 /* YouTube
 ------------------------------*/
+/* Googlemap
+------------------------------*/
 /*======================================
 Modal
 ======================================*/
@@ -896,7 +898,7 @@ Modal
 WordPress Post Entry
 ======================================*/
 /*----- entry content -----*/
-.entry-content {
+.entry_content {
 	/* headline */
 	/* image */
 	/* text */
@@ -905,21 +907,21 @@ WordPress Post Entry
 	/* table */
 }
 
-.entry-content ol {
+.entry_content ol {
 	padding-left: 1em;
 	list-style: decimal;
 }
 
-.entry-content ul {
+.entry_content ul {
 	padding-left: 1em;
 	list-style: disc;
 }
 
-.entry-content ul li ul {
+.entry_content ul li ul {
 	list-style: circle;
 }
 
-/*---- ページナビ -----*/
+/*---- page navi -----*/
 .page-numbers {
 	margin-top: 20px;
 }
@@ -953,8 +955,6 @@ WordPress Post Entry
 Others
 ======================================*/
 /* chat
-------------------------------*/
-/* Googlemap
 ------------------------------*/
 /*======================================
 Slider

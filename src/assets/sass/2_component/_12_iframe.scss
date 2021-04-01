@@ -24,3 +24,15 @@
 		}
 	}
 }
+
+
+/* Googlemap
+------------------------------*/
+.googlemap {
+	@media (min-width: #{$BREAKPOINT}) {
+	}
+	iframe {
+		@media (min-width: #{$BREAKPOINT}) {
+		}
+	}
+}
