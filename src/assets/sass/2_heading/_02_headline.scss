@@ -1,29 +1,5 @@
 @charset "UTF-8";
 
-/* page_head
-------------------------------*/
-.page_head {
-	@media (min-width: #{$BREAKPOINT}) {
-	}
-
-	$setBG: about, contact, news;
-	@each $i in $setBG {
-		&.__page_#{$i} {
-			background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_sp.jpg');
-			@media (min-width: #{$BREAKPOINT}) {
-				background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_pc.jpg');
-			}
-		}
-	}
-}
-
-.page_headline {
-	@media (min-width: #{$BREAKPOINT}) {
-	}
-}
-
-
-
 /* single_page_headline
 ------------------------------*/
 .single_page_headline {
