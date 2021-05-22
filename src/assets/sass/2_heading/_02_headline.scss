@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.single_page_headline,
+.primary_headline,
+.secondary_headline,
+.basic_headline,
+.normally_headline,
+.sction_headline,
+.big_headline,
+.small_headline {
+	margin-top: 0;
+}
+
 /* single_page_headline
 ------------------------------*/
 .single_page_headline {

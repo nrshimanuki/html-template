@@ -36,11 +36,11 @@
 		@media (min-width: #{$breakpoint}) {
 		}
 	}
-}
-
-.sidebar__link {
-	display: inline-block;
-	@include font_size();
-	@media (min-width: #{$breakpoint}) {
+	a {
+		display: inline-block;
+		@include font_size();
+		@media (min-width: #{$breakpoint}) {
+		}
 	}
 }
+

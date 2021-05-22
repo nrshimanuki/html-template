@@ -8,7 +8,7 @@
 
 	$setBG: about, contact, news;
 	@each $i in $setBG {
-		&.__page_#{$i} {
+		&.-page_#{$i} {
 			background-image: url($img_dir + '/#{$i}/#{$i}_head_sp.jpg');
 			@media (min-width: #{$breakpoint}) {
 				background-image: url($img_dir + '/#{$i}/#{$i}_head_pc.jpg');

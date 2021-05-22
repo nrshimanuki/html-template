@@ -10,7 +10,7 @@
 .list_item {
 	@media (min-width: #{$breakpoint}) {
 	}
-	&:first-of-type(1) {
+	&:first-child {
 		@media (min-width: #{$breakpoint}) {
 		}
 	}

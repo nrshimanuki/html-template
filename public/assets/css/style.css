@@ -592,13 +592,15 @@ Main
 /* section
 ------------------------------*/
 .section {
-	padding: 10px 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* content_inner
 ------------------------------*/
 .content_inner {
-	padding: 0 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	width: 100%;
 }
 
@@ -637,13 +639,13 @@ Sidebar
 	list-style: none;
 }
 
-.sidebar__link {
+.sidebar__item a {
 	display: inline-block;
 	font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.sidebar__link {
+	.sidebar__item a {
 		font-size: 1.6rem;
 	}
 }
@@ -712,6 +714,10 @@ Page Top
 	z-index: 100;
 }
 
+.pagetop_button {
+	display: block;
+}
+
 /*======================================
 Background
 ======================================*/
@@ -722,52 +728,47 @@ Heading
 ======================================*/
 /* headling base
 ------------------------------*/
-h1 {
-	font-size: 3.6rem;
-}
-
-h2 {
-	font-size: 2.8rem;
-}
-
-h3 {
-	font-size: 2.4rem;
-}
-
-h4, h5, h6 {
-	font-size: 2rem;
-}
-
 /* page_head
 ------------------------------*/
-.page_head.__page_about {
+.page_head.-page_about {
 	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/about/about_head_sp.jpg");
 }
 
 @media (min-width: 768px) {
-	.page_head.__page_about {
+	.page_head.-page_about {
 		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/about/about_head_pc.jpg");
 	}
 }
 
-.page_head.__page_contact {
+.page_head.-page_contact {
 	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/contact/contact_head_sp.jpg");
 }
 
 @media (min-width: 768px) {
-	.page_head.__page_contact {
+	.page_head.-page_contact {
 		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/contact/contact_head_pc.jpg");
 	}
 }
 
-.page_head.__page_news {
+.page_head.-page_news {
 	background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/news/news_head_sp.jpg");
 }
 
 @media (min-width: 768px) {
-	.page_head.__page_news {
+	.page_head.-page_news {
 		background-image: url("/wp/wp-content/themes/tokinosasae/assets/img/news/news_head_pc.jpg");
 	}
+}
+
+.single_page_headline,
+.primary_headline,
+.secondary_headline,
+.basic_headline,
+.normally_headline,
+.sction_headline,
+.big_headline,
+.small_headline {
+	margin-top: 0;
 }
 
 /* single_page_headline
@@ -822,7 +823,7 @@ Icon
 	        transform: rotate(-220deg);
 }
 
-.icon_arrow._circle {
+.icon_arrow.-circle {
 	padding: 5px;
 	width: 15px;
 	height: 15px;
@@ -830,7 +831,7 @@ Icon
 	border-radius: 50%;
 }
 
-.icon_arrow._circle::before, .icon_arrow._circle::after {
+.icon_arrow.-circle::before, .icon_arrow.-circle::after {
 	background: #FFF;
 }
 
