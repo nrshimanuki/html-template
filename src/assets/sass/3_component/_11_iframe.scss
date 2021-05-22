@@ -3,24 +3,24 @@
 /* YouTube
 ------------------------------*/
 .video_list {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .video_item {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .video_wrap {
 	// @include video_wrap();
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		// padding-top: calc(56.25% / 2);
 		// width: 50%;
 	}
 	iframe {
 		// @include video();
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }
@@ -29,10 +29,10 @@
 /* Googlemap
 ------------------------------*/
 .googlemap {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	iframe {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }

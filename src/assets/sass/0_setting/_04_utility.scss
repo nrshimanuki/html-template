@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+// font_size
+//--------------------------------
+@mixin font_size() {
+	font-size: $font_size_sp;
+	@media (min-width: #{$breakpoint}) {
+		font-size: $font_size;
+	}
+}
+
+
 // text
 //--------------------------------
 @mixin text($color:$FONT_COLOR, $fontSize:$FONT_SIZE, $fontWeight:normal, $lineHeight:$LINE_HEIGHT) {

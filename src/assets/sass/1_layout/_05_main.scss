@@ -3,7 +3,7 @@
 /* Main
 ------------------------------*/
 .site_main {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -11,7 +11,7 @@
 /* wide_inner
 ------------------------------*/
 .wide_inner {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include wide_inner();
 	}
 }
@@ -21,7 +21,7 @@
 ------------------------------*/
 .section {
 	padding: 10px 0;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -31,7 +31,7 @@
 .content_inner {
 	padding: 0 10px;
 	width: 100%;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
 		padding-right: 0;

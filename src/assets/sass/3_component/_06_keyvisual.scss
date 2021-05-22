@@ -3,16 +3,16 @@
 .keyvisual {
 	// position: relative;
 	// z-index: 1;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .keyvisual_inner {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	> img {
 		// width: 100%;
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }

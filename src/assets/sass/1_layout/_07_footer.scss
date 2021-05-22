@@ -3,13 +3,13 @@
 /* site_footer
 ------------------------------*/
 .site_footer {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.site_footer_inner {
+.site_footer__inner {
 	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
 		padding-right: 0;
@@ -20,27 +20,31 @@
 /* footer_nav
 ------------------------------*/
 .footer_nav {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.footer_nav_list {
-	@media (min-width: #{$BREAKPOINT}) {
+.footer_nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: #{$breakpoint}) {
 	}
 	&:nth-child(1) {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }
 
-.footer_nav_item {
-	@media (min-width: #{$BREAKPOINT}) {
+.footer_nav__item {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.footer_nav_link {
+.footer_nav__link {
 	display: inline-block;
-	@media (min-width: #{$BREAKPOINT}) {
+	@include font_size();
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -49,7 +53,8 @@
 ------------------------------*/
 .copyright {
 	display: block;
+	padding: 10px 0;
 	font-size: 1rem;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

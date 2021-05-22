@@ -11,9 +11,10 @@
 	"license": "ISC",
 	"browserslist": [
 		"last 2 versions",
+		"ie >= 11",
 		"ios_saf >= 8",
-		"and_chr >= 5",
-		"Android >= 5"
+		"Android >= 5",
+		"and_chr >= 5"
 	],
 	"devDependencies": {
 		"browser-sync": "^2.26.14",

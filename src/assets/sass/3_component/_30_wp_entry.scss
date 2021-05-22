@@ -1,91 +1,91 @@
 @charset "UTF-8";
 
 .entry_header {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_title {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_meta {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_date {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_category {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_image {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_img {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_caption {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .entry_footer {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 
 /*----- entry content -----*/
 .entry_content {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 
 	/* headline */
 	h1 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 	h2 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 	h3 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 	h4 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 	h5 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 	h6 {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 
 	/* image */
 	img {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 
 	/* text */
 	p {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 
@@ -93,20 +93,20 @@
 	ol {
 		padding-left: 1em;
 		list-style: decimal;
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		li {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
 	ul {
 		padding-left: 1em;
 		list-style: disc;
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		li {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 			ul {
 				list-style: circle;
@@ -116,24 +116,24 @@
 
 	/* link */
 	a {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		&:hover {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
 
 	/* table */
 	table {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		th {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 		td {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
@@ -143,7 +143,7 @@
 /*---- page navi -----*/
 .page-numbers {
 	margin-top: 20px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	li {
 		display: inline-block;
@@ -159,14 +159,14 @@
 		font-size: 1.4rem;
 		line-height: 1;
 		text-decoration: none;
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		&.current,
 		&:hover {
 			color: #FFA74D;
 			background: #fff;
 			border-color: #FFA74D;
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}

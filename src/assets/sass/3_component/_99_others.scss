@@ -11,7 +11,7 @@
 	// height: 50px;
 	// background: #039;
 	// border-radius: 10px 10px 0 0;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 .chat_toggle {
@@ -22,7 +22,7 @@
 	// height: 30px;
 	// border: 1px solid #FFF;
 	// color: #FFF;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	&::before,
 	&::after {
@@ -50,10 +50,10 @@
 	}
 }
 .chat_inner {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 .chat_title {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

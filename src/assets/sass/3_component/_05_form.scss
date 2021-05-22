@@ -13,12 +13,12 @@ select,
 textarea {
 	padding: 5px;
 	border: 1px solid #9FA0A0;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -26,17 +26,17 @@ textarea {
 /* form_group_container
 ------------------------------*/
 .form_group_container {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_group_title {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_group_wrap {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -44,31 +44,31 @@ textarea {
 /* form_group
 ------------------------------*/
 .form_group {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	fieldset {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 			display: contents;
 		}
 	}
 	legend {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }
 
 .form_group_name {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_label {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_group_body {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -76,7 +76,7 @@ textarea {
 /* form_control
 ------------------------------*/
 .form_control {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -84,14 +84,14 @@ textarea {
 	// display: inline-block;
 	// position: relative;
 	// background: transparent;
-	// @media (min-width: #{$BREAKPOINT}) {
+	// @media (min-width: #{$breakpoint}) {
 	// }
 	// &::after {
 	// 	@include element();
 	// 	@include arrow(4,4,1,#444343,135);
 	// 	top: 7px;
 	// 	right: 9px;
-	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 	@media (min-width: #{$breakpoint}) {
 	// 		@include arrow(6,6,1,#444343,135);
 	// 		top: 13px;
 	// 		right: 18px;
@@ -101,17 +101,17 @@ textarea {
 
 .form_control_select {
 	background: transparent;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_control_textarea {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_control_check {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -119,17 +119,17 @@ textarea {
 /* form_check
 ------------------------------*/
 .form_check_container {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_check_text {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .form_check_group {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -141,7 +141,7 @@ textarea {
 	// position: relative;
 	// margin-left: 4px;
 	// padding-left: 12px;
-	// @media (min-width: #{$BREAKPOINT}) {
+	// @media (min-width: #{$breakpoint}) {
 	// 	margin-left: 0;
 	// 	padding-left: 24px;
 	// }
@@ -154,7 +154,7 @@ textarea {
 	// 	height: 8px;
 	// 	border: 1px solid #695541;
 	// 	content: "";
-	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 	@media (min-width: #{$breakpoint}) {
 	// 		top: 5px;
 	// 		width: 16px;
 	// 		height: 16px;
@@ -164,7 +164,7 @@ textarea {
 
 .form_control_check:checked + .form_check_label,
 .wpcf7-list-item input:checked + .wpcf7-list-item-label {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	// &::after {
 	// 	display: block;
@@ -177,7 +177,7 @@ textarea {
 	// 	border-bottom: 2px solid #90755B;
 	// 	border-right: 2px solid #90755B;
 	// 	content: "";
-	// 	@media (min-width: #{$BREAKPOINT}) {
+	// 	@media (min-width: #{$breakpoint}) {
 	// 		top: -5px;
 	// 		width: 14px;
 	// 		height: 20px;
@@ -188,7 +188,7 @@ textarea {
 #form_checkbox1,
 #form_checkbox2,
 .wpcf7-list-item.first input {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -197,7 +197,7 @@ textarea {
 ------------------------------*/
 .form_required {
 	color: #F00;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		font-size: 1.6rem;
 	}
 }
@@ -207,17 +207,17 @@ textarea {
 ------------------------------*/
 .page_contact {
 	.wpcf7-not-valid-tip {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 
 	.wpcf7-tel {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 
 	.wpcf7-response-output {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }

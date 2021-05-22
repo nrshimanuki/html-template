@@ -5,85 +5,106 @@
 .site_nav {
 	overflow-y: scroll;
 	position: fixed;
-	top: 75px;
+	top: 50px;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 75px);
-	background: #fa0;
+	height: calc(100% - 50px);
+	background-color: #fa0;
 	opacity: 0;
 	transition: all .3s;
 	pointer-events: none;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		overflow-y: visible;
 		position: static;
-		background: none;
+		background-color: transparent;
 		width: auto;
 		height: auto;
-		font-size: 2.2rem;
 		opacity: 1;
 		pointer-events: all;
 	}
 
-	body.__menu_open & {
+	ol, ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	body.-menu_open & {
 		z-index: 200;
 		opacity: 1;
 		pointer-events: all;
 	}
 }
 
-.site_nav_inner {
+.site_nav__inner {
 	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
-		padding-left: 0;
-		padding-right: 0;
+		padding: 0;
 	}
 }
 
-.site_nav_list {
-	@media (min-width: #{$BREAKPOINT}) {
+.site_nav__list {
+	@media (min-width: #{$breakpoint}) {
 		@include flex();
 	}
 }
 
-.site_nav_item {
+.site_nav__item {
 	margin-top: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		margin-top: 0;
+		flex-grow: 1;
+		transition: all .3s;
 	}
-	&:nth-child(1) {
-		@media (min-width: #{$BREAKPOINT}) {
+	&:first-child {
+		@media (min-width: #{$breakpoint}) {
+			margin-top: 0;
 		}
 	}
-
-	.__current &,
+	&.-current,
 	&:hover {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
+			background-color: $link_color;
 		}
 	}
 }
 
-.site_nav_link {
+.site_nav__link {
+	@include font_size();
+	padding: 10px;
 	display: inline-block;
-	@media (min-width: #{$BREAKPOINT}) {
+	text-decoration: none;
+	@media (min-width: #{$breakpoint}) {
+		display: block;
+		text-align: center;
+	}
+	.site_nav__item.-current &,
+	.site_nav__item:hover & {
+		@media (min-width: #{$breakpoint}) {
+			color: #FFF;
+		}
 	}
 }
 
 
 // site_nav_sub_list
-.site_nav_sub_list {
-	@media (min-width: #{$BREAKPOINT}) {
+.site_nav__sub_list {
+	@media (min-width: #{$breakpoint}) {
 		display: none;
 	}
 }
 
-.site_nav_sub_item {
-	@media (min-width: #{$BREAKPOINT}) {
+.site_nav__sub_item {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.site_nav_sub_link {
+.site_nav__sub_link {
+	@include font_size();
+	padding: 10px;
 	display: inline-block;
-	@media (min-width: #{$BREAKPOINT}) {
+	text-decoration: none;
+	@media (min-width: #{$breakpoint}) {
 	}
 }

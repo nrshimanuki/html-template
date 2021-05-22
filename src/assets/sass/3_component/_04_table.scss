@@ -3,7 +3,7 @@
 .table_wrap {
 	// overflow-x: scroll;
 	// width: 100%;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		// overflow-x: unset;
 		// -ms-overflow-style: none;
 	}
@@ -11,34 +11,34 @@
 
 .table {
 	// width: 100%;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .th {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .td {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .thead {
 	.th {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
 	.td {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
@@ -46,18 +46,18 @@
 
 .tbody {
 	.th {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
 	.td {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
@@ -65,18 +65,18 @@
 
 .tfoot {
 	.th {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}
 	.td {
-		@media (min-width: #{$BREAKPOINT}) {
+		@media (min-width: #{$breakpoint}) {
 		}
 		.inner {
-			@media (min-width: #{$BREAKPOINT}) {
+			@media (min-width: #{$breakpoint}) {
 			}
 		}
 	}

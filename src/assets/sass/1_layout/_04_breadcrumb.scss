@@ -3,13 +3,13 @@
 /* breadcrumb
 ------------------------------*/
 .bread {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .bread_inner {
 	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
 		padding-right: 0;
@@ -17,21 +17,44 @@
 }
 
 .bread_list {
-	display: flex;
-	@media (min-width: #{$BREAKPOINT}) {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .bread_item {
-	@media (min-width: #{$BREAKPOINT}) {
+	display: inline-block;
+	@media (min-width: #{$breakpoint}) {
 	}
-	&:nth-child(1) {
-		@media (min-width: #{$BREAKPOINT}) {
+	&:first-child {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }
 
+.bread_link,
+.bread_text {
+	@include font_size();
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
 .bread_link {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
+	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.bread_text {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

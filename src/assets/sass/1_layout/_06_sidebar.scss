@@ -3,40 +3,44 @@
 /* sidebar
 ------------------------------*/
 .sidebar {
-	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
 
-.sidebar_inner {
-	@media (min-width: #{$BREAKPOINT}) {
+.sidebar__inner {
+	padding: 10px;
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.sidebar_headline {
-	@media (min-width: #{$BREAKPOINT}) {
+.sidebar__headline {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.sidebar_list {
-	@media (min-width: #{$BREAKPOINT}) {
+.sidebar__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.sidebar_item {
-	@media (min-width: #{$BREAKPOINT}) {
+.sidebar__item {
+	@media (min-width: #{$breakpoint}) {
 	}
-	&:nth-child(1) {
-		@media (min-width: #{$BREAKPOINT}) {
+	&:first-child {
+		@media (min-width: #{$breakpoint}) {
 		}
 	}
 }
 
-.sidebar_link {
+.sidebar__link {
 	display: inline-block;
-	@media (min-width: #{$BREAKPOINT}) {
+	@include font_size();
+	@media (min-width: #{$breakpoint}) {
 	}
 }

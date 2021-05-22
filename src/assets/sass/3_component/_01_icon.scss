@@ -3,7 +3,7 @@
 /* icon
 ------------------------------*/
 .icon {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -13,7 +13,7 @@
 .icon_arrow {
 	display: inline-block;
 	position: relative;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 	&::before,
 	&::after {
@@ -52,6 +52,6 @@
 /* badge
 ------------------------------*/
 .badge {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

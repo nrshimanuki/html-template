@@ -4,16 +4,18 @@
 ::before,
 ::after {
 	box-sizing: border-box;
+	background-repeat: no-repeat;
 	font-size: 1em;
 }
+
 html {
 	font-size: 62.5%;
 }
+
 body {
 	margin: 0;
-	text-size-adjust: none;
-	color: $FONT_COLOR;
-	font-family: $FONT;
+	line-height: 1.1;
+	text-size-adjust: 100%;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
@@ -22,67 +24,17 @@ main {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 5px 0;
-}
-
-ol,
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-li {
-	font-size: $FONT_SIZE;
-	line-height: $LINE_HEIGHT;
-}
-
-dl {
-	margin: 0;
-}
-dt,
-dd {
-	margin: 0;
-	font-size: $FONT_SIZE;
-	line-height: $LINE_HEIGHT;
-}
-
-table {
-	border-collapse: collapse;
-}
-th {
-	vertical-align: top;
-}
-th,
-td {
-	font-size: $FONT_SIZE;
-	line-height: $LINE_HEIGHT;
-}
-
-p {
-	margin: 0;
-	font-size: $FONT_SIZE;
-	line-height: $LINE_HEIGHT;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-}
-
 a {
-	color: $LINK_COLOR;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+	color: $link_color;
 }
-a:link {
-	// color: $LINK_COLOR;
-}
+
+a:link,
 a:visited {
-	// color: $LINK_COLOR;
+	// color: $main_color;
 }
-a:hover {
-	// color: $LINK_COLOR;
-}
+a:hover,
 a:active {
-	// color: $LINK_COLOR;
+	// color: $main_color;
 }
 
 img {
@@ -97,21 +49,21 @@ textarea {
 	font-size: 1.6rem;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="checkbox"],
-input[type="tel"],
-input[type="url"],
-input[type="email"],
-input[type="number"],
-input[type="date"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input,
 select,
-textarea {
+textarea,
+button {
 	appearance: none;
-	border-radius: 0;
+}
+
+[type="checkbox"] {
+	-webkit-appearance: checkbox;
+	appearance: checkbox;
+}
+
+[type="radio"] {
+	-webkit-appearance: radio;
+	appearance: radio;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -119,22 +71,56 @@ input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
+
 input[type="number"] {
 	-moz-appearance:textfield;
-}
-
-select::-ms-expand {
-	display: none;
 }
 
 textarea {
 	overflow-y: hidden;
 }
 
-input[type="submit"],
-input[type="reset"],
+select::-ms-expand {
+	display: none;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+}
+
+label[for],
 input[type="button"],
+input[type="reset"],
+input[type="submit"],
 select,
 button {
 	cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
 }

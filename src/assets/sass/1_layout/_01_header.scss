@@ -3,19 +3,20 @@
 /* site_header
 ------------------------------*/
 .site_header {
+	@include font_size();
 	position: fixed;
 	z-index: 100;
 	top: 0;
 	width: 100%;
 	background: #FFF;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		position: static;
 	}
 }
 
-.site_header_inner {
+.site_header__inner {
 	padding: 10px;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
 		padding-right: 0;
@@ -26,29 +27,29 @@
 /* site_branding
 ------------------------------*/
 .site_branding {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .site_title {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .site_description {
 	display: none;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		display: block;
 	}
 }
 
 .site_logo {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .site_logo_img {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
@@ -57,23 +58,25 @@
 ------------------------------*/
 .site_info {
 	display: none;
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 		display: block;
 	}
 }
 
-.site_info_list {
-	@media (min-width: #{$BREAKPOINT}) {
+.site_info__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.site_info_item {
-	@media (min-width: #{$BREAKPOINT}) {
+.site_info__item {
+	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.site_info_link {
-	display: inline-block;
-	@media (min-width: #{$BREAKPOINT}) {
+.site_info__link {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

@@ -1,113 +1,133 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><html lang="ja">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="title" content=""> -->
+	<!-- <meta name="description" content=""> -->
+	<!-- <meta name="keywords" content=""> -->
+	<!-- <meta property="og:locale" content="ja_JP"> -->
+	<!-- <meta property="og:type" content="website"> -->
+	<!-- <meta property="og:url" content=""> -->
+	<!-- <meta property="og:title" content=""> -->
+	<!-- <meta property="og:site_name" content=""> -->
+	<!-- <meta property="og:image" content=""> -->
+	<!-- <meta property="og:description" content=""> -->
+	<!-- <meta name="twitter:image" content=""> -->
+	<!-- <meta name="twitter:card" content=""> -->
+	<!-- <meta name="twitter:site" content=""> -->
 	<title>Title</title>
+	<!-- <link rel="icon" href="/assets/img/favicon/favicon.ico"> -->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href=""> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css"> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"> -->
 	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
 <body>
-<div class="site page_home">
+<div class="site page_name">
 
 <header class="site_header">
-	<div class="site_header_inner">
-
+	<div class="site_header__inner">
 		<div class="site_branding">
-			<h1 class="site_title">
-				<a class="site_logo" href="/">Site Title</a>
-			</h1>
+			<div class="site_title"><a class="site_logo" href="/">Site Title</a></div>
 			<p class="site_description">Site Description</p>
 		</div><!-- .site_branding -->
-
 		<div class="site_info">
-			<ul class="site_info_list">
-				<li class="site_info_item __request">
-					<a class="site_info_link" href="/request/">Request</a>
-				</li>
+			<ul class="site_info__list">
+				<li class="site_info__item -request"><a class="site_info__link" href="/request/">Request</a></li>
+				<li class="site_info__item -contact"><a class="site_info__link" href="/request/">Contact</a></li>
 			</ul>
 		</div>
-
-	</div><!-- site_header_inner -->
+	</div><!-- site_header__inner -->
 </header>
 
 <!-- <div class="menu_bg only_sp" id="menu_bg"></div> -->
 <button class="menu_button sp_only" id="menu_button" aria-controls="primary-menu" aria-expanded="false">
-	<div class="menu_button_inner">
-		<span class="menu_button_bar __top"></span>
-		<span class="menu_button_bar __middle"></span>
-		<span class="menu_button_bar __bottom"></span>
-		<p class="menu_button_text">Menu</p>
+	<div class="menu_button__inner">
+		<span class="menu_button__bar -top"></span>
+		<span class="menu_button__bar -middle"></span>
+		<span class="menu_button__bar -bottom"></span>
+		<p class="menu_button__text">Menu</p>
 	</div>
 </button>
 
 <nav class="site_nav">
-	<div class="site_nav_inner">
-		<ul class="site_nav_list">
-			<li class="site_nav_item">
-				<a class="site_nav_link" href="/">Home</a>
-			</li>
-			<li class="site_nav_item">
-				<a class="site_nav_link" href="/contents/">Contents</a>
-				<ul class="site_nav_sub_list">
-					<li class="site_nav_sub_item">
-						<a class="site_nav_sub_link" href="/sub_content/"><span>Sub Content</span></a>
-					</li>
+	<div class="site_nav__inner">
+		<ul class="site_nav__list">
+			<li class="site_nav__item -current"><a class="site_nav__link" href="/">Home</a></li>
+			<li class="site_nav__item">
+				<a class="site_nav__link" href="/about/">About</a>
+				<ul class="site_nav__sub_list">
+					<li class="site_nav__sub_item"><a class="site_nav__sub_link" href="/sub_content/"><span>Sub Content</span></a></li>
 				</ul>
 			</li>
-			<li class="site_nav_item">
-				<a class="site_nav_link" href="/contact/">Contact</a>
-			</li>
+			<li class="site_nav__item"><a class="site_nav__link" href="/contact/">Contact</a></li>
 		</ul>
-	</div><!-- site_nav_inner -->
+	</div><!-- site_nav__inner -->
 </nav><!-- site_nav -->
 
 <div class="site_content">
 
+	<div class="keyvisual">
+		<div class="slide_area">
+			<div class="slide">
+				<img class="slide_img" src="/assets/img/1920x400.png" width="1920" height="400" alt="">
+			</div>
+		</div>
+	</div><!-- keyvisual -->
+
 	<nav class="bread">
 		<div class="bread_inner">
 			<ol class="bread_list">
-				<li class="bread_item"><a class="bread_link" href="/">Home</a></li>
+				<li class="bread_item"><a class="bread_link" href="/">Home</a> &gt;</li>
+				<li class="bread_item -current"><span class="bread_text">About</span></li>
 			</ol>
 		</div><!-- bread_inner -->
 	</nav><!-- bread -->
 
-	<div class="site_container">
+	<div class="site_container -row">
 
 		<main class="site_main" role="main">
+
+			<article class="post entry content_inner">
+				<header class="entry_header">
+					<h1 class="entry_title">Hello world!</h1>
+					<div class="entry_meta">
+						<span class="entry_date">0000-00-00</span>
+					</div>
+				</header>
+				<div class="entry_content">
+					<p>Hello world!</p>
+					<figure class="entry_image">
+						<img class="entry_img" src="" alt="">
+						<figcaption class="entry_caption">Img Caption</figcaption>
+					</figure>
+				</div>
+				<footer class="entry_footer">
+					<a class="cat_links" href="">Category</a>
+				</footer>
+			</article>
+
 			<section class="section section_lead wide_inner">
 				<div class="content_inner">
 					<h2>Headline 2</h2>
-					<ul>
-						<li>list01</li>
-						<li>list02</li>
-					</ul>
-				</div>
-
-				<div class="content_inner">
-					<h3>Headline 3</h3>
-					<dl>
-						<dt>dt</dt>
-						<dd>dd</dd>
-					</dl>
-				</div>
-
-				<div class="content_inner">
-					<h4>Headline 4</h4>
-					<p>text.text.text.</p>
+					<p>text.</p>
 				</div>
 			</section>
+
 		</main>
 
 		<aside class="widget-area sidebar">
-			<section class="widget widget_categories sidebar_inner">
+			<div class="widget widget_categories sidebar__inner">
 				<h3 class="widget_title">Categories</h3>
-				<ul class="sidebar_list">
-					<li class="sidebar_item cat_item">
+				<ul class="sidebar__list">
+					<li class="sidebar__item cat_item">
 						<a href="">Category name</a>
 					</li>
 				</ul>
-			</section>
+			</div>
 		</aside>
 
 	</div><!-- site_container -->
@@ -115,15 +135,23 @@
 </div><!-- site_content -->
 
 <footer class="site_footer" role="contentinfo">
-	<div class="site_footer_inner">
+	<div class="site_footer__inner">
+		<nav class="footer_nav">
+			<ul class="footer_nav__list">
+				<li class="footer_nav__item"><a class="footer_nav__link" href="">Home</a></li>
+				<li class="footer_nav__item"><a class="footer_nav__link" href="">About</a></li>
+				<li class="footer_nav__item"><a class="footer_nav__link" href="">Contact</a></li>
+			</ul>
+		</nav>
 		<small class="copyright">&copy; Copyright</small>
-	</div><!-- site_footer_inner -->
+	</div><!-- site_footer__inner -->
 </footer>
 
-<a id="pagetop" href="javascript:void(0);"></a>
+<div class="pagetop_area">
+	<a id="pagetop" href="javascript:void(0);"></a>
+</div>
 
 </div><!-- site -->
 <script src="/assets/js/jquery-3.5.1.min.js"></script>
 <script src="/assets/js/script.js"></script>
-</body>
-</html>
+</body></html>

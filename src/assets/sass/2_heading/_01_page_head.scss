@@ -3,21 +3,21 @@
 /* page_head
 ------------------------------*/
 .page_head {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 
 	$setBG: about, contact, news;
 	@each $i in $setBG {
 		&.__page_#{$i} {
-			background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_sp.jpg');
-			@media (min-width: #{$BREAKPOINT}) {
-				background-image: url($IMG_DIR + '/#{$i}/#{$i}_head_pc.jpg');
+			background-image: url($img_dir + '/#{$i}/#{$i}_head_sp.jpg');
+			@media (min-width: #{$breakpoint}) {
+				background-image: url($img_dir + '/#{$i}/#{$i}_head_pc.jpg');
 			}
 		}
 	}
 }
 
 .page_headline {
-	@media (min-width: #{$BREAKPOINT}) {
+	@media (min-width: #{$breakpoint}) {
 	}
 }

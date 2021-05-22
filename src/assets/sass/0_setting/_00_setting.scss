@@ -5,21 +5,22 @@
 
 // File path
 //--------------------------------
-// $IMG_DIR: '/assets/img';
-$IMG_DIR: '/wp/wp-content/themes/tokinosasae/assets/img';
+// $img_dir: '/assets/img';
+$img_dir: '/wp/wp-content/themes/tokinosasae/assets/img';
 
 
 // Breakpoint
 //--------------------------------
-$BREAKPOINT_SP: '767px';
-$BREAKPOINT: '768px';
-$BREAKPOINT_PC: '960px';
+$breakpoint_sp: '767px';
+$breakpoint: '768px';
+$breakpoint_pc: '960px';
 
 
 // Layout
 //--------------------------------
-$CONTENT_WIDTH: 960px;
-$WIDE_WIDTH: 1280px;
+$wide_width: 1280px;
+$content_width: 960px;
+$sidebar_width: 300px;
 
 
 // Font
@@ -44,13 +45,17 @@ $WIDE_WIDTH: 1280px;
 // 	url(../fonts/NotoSansCJKjp-Bold.otf) format('opentype');
 // }
 
-$FONT: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-$FONT_SERIF: "游明朝体", "Yu Mincho", YuMincho, serif;
-$FONT_COLOR: #333;
-$FONT_SIZE_SP: 1.6rem;
-$FONT_SIZE: 1.6rem;
-$LINE_HEIGHT: 1.5;
-$LINK_COLOR: #3af;
+$font: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+$font_serif: "游明朝体", "Yu Mincho", YuMincho, serif;
+$font_european: 'Josefin Sans', sans-serif;
+$font_number: 'Oswald', sans-serif;
+$font_weight: 400;
+
+$font_color: #333;
+$font_size_sp: 1.6rem;
+$font_size: 1.6rem;
+$line_height: 1.5;
+$link_color: #3af;
 
 // $FONT: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 // $FONT_SERIF: "游明朝体", "Yu Mincho", YuMincho, serif;
@@ -87,10 +92,11 @@ $LINK_COLOR: #3af;
 
 // Site color
 //--------------------------------
-$BASE_COLOR: #FFF;
-$MAIN_COLOR: #7D4698;
-$SUB_COLOR: #B570AB;
-$ACCENT_COLOR: #F29669;
+$base_color: #FFF;
+$main_color: #7D4698;
+$sub_color: #B570AB;
+$accent_color: #F29669;
+$button_color: #7D4698;
 
 
 // Dark theme
