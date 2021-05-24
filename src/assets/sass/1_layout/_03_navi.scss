@@ -16,7 +16,7 @@
 	@media (min-width: #{$breakpoint}) {
 		overflow-y: visible;
 		position: static;
-		background-color: transparent;
+		background-color: #ddd;
 		width: auto;
 		height: auto;
 		opacity: 1;
@@ -41,6 +41,7 @@
 	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding: 0;
+		background-color: #eee;
 	}
 }
 
@@ -101,9 +102,9 @@
 }
 
 .site_nav__sub_link {
-	@include font_size();
-	padding: 10px;
 	display: inline-block;
+	padding: 10px;
+	@include font_size();
 	text-decoration: none;
 	@media (min-width: #{$breakpoint}) {
 	}

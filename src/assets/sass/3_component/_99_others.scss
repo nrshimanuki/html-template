@@ -2,7 +2,7 @@
 
 /* chat
 ------------------------------*/
-.chat_block {
+.chat__block {
 	// position: fixed;
 	// right: 0;
 	// bottom: 0;
@@ -14,7 +14,8 @@
 	@media (min-width: #{$breakpoint}) {
 	}
 }
-.chat_toggle {
+
+.chat__toggle {
 	// position: absolute;
 	// top: 5px;
 	// right: 10px;
@@ -49,11 +50,13 @@
 		// cursor: pointer;
 	}
 }
-.chat_inner {
+
+.chat__inner {
 	@media (min-width: #{$breakpoint}) {
 	}
 }
-.chat_title {
+
+.chat__title {
 	@media (min-width: #{$breakpoint}) {
 	}
 }

@@ -5,18 +5,18 @@
 .sidebar {
 	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 
 .sidebar__inner {
 	padding: 10px;
 	@media (min-width: #{$breakpoint}) {
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 }
 
-.sidebar__headline {
+.sidebar__title {
 	@media (min-width: #{$breakpoint}) {
 	}
 }
@@ -36,6 +36,11 @@
 		@media (min-width: #{$breakpoint}) {
 		}
 	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+
 	a {
 		display: inline-block;
 		@include font_size();

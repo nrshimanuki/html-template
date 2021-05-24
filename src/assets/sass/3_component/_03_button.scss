@@ -2,13 +2,23 @@
 
 /* button
 ------------------------------*/
-.button_wrap {
-	// text-align: center;
+.button_container {
 	@media (min-width: #{$breakpoint}) {
 	}
 }
 
+.button_wrap {
+	@media (min-width: #{$breakpoint}) {
+	}
+	+ .button_wrap {
+		margin-left: 10px;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
 .button {
+	@include button();
 	@media (min-width: #{$breakpoint}) {
 	}
 	&:hover {

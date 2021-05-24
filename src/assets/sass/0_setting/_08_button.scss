@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+// button
+//--------------------------------
+@mixin button($bgColor:#fa3, $fontColor:#FFF, $fontSize:1.4rem) {
+	display: inline-block;
+	position: relative;
+	padding: 10px 20px;
+	background-color: $bgColor;
+	border-radius: 8px;
+	color: $fontColor;
+	font-size: $fontSize;
+	line-height: 1;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-align: center;
+	transition: all .3s;
+	@media (min-width: #{$breakpoint}) {
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		background-color: #FFF;
+		border-radius: 50%;
+		transform: translateY(-50%);
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+
+	&.-primary {
+		background-color: #af3;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+
+	&.-secondary {
+		background-color: #3af;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+			opacity: .8;
+		}
+	}
+
+}

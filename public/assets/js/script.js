@@ -29,6 +29,14 @@
 
 
 
+	/* slideToggle
+	------------------------------*/
+	$('.toggle').css('cursor','pointer').on('click', function() {
+		$(this).next().slideToggle();
+	});
+
+
+
 	/* pagetop
 	------------------------------*/
 	const pageTop = $('#pagetop');
@@ -49,10 +57,10 @@
 
 	/* AjaxZip3
 	------------------------------*/
-	jQuery('#form_zip02').keyup(function(event){
-		AjaxZip3.zip2addr('form_zip01','form_zip02','form_address01','form_address01');
-		return false;
-	})
+	// jQuery('#form_zip02').keyup(function(event){
+	// 	AjaxZip3.zip2addr('form_zip01','form_zip02','form_address01','form_address02');
+	// 	return false;
+	// })
 
 
 

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.table_wrap {
+	// overflow-x: scroll;
+	// width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	@include block_shadow();
+	@media (min-width: #{$breakpoint}) {
+		// overflow-x: unset;
+		// -ms-overflow-style: none;
+	}
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: #{$breakpoint}) {
+	}
+	th {
+		border: 1px solid #ddd;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+	td {
+		border: 1px solid #ddd;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.table__caption {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.thead {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.tbody {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.tfoot {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.table__row {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.table__thead__th {
+	text-align: left;
+	vertical-align: top;
+	@media (min-width: #{$breakpoint}) {
+	}
+	.__inner {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.table__tbody__th {
+	text-align: left;
+	vertical-align: top;
+	@media (min-width: #{$breakpoint}) {
+	}
+	.__inner {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.table__tbody__td {
+	@media (min-width: #{$breakpoint}) {
+	}
+	.__inner {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}

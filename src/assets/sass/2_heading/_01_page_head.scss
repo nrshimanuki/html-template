@@ -3,10 +3,16 @@
 /* page_head
 ------------------------------*/
 .page_head {
+	background-color: #eee;
 	@media (min-width: #{$breakpoint}) {
 	}
+}
 
-	$setBG: about, contact, news;
+.page_head__inner {
+	@media (min-width: #{$breakpoint}) {
+		@include content_inner();
+	}
+	$setBG: about, contact;
 	@each $i in $setBG {
 		&.-page_#{$i} {
 			background-image: url($img_dir + '/#{$i}/#{$i}_head_sp.jpg');
@@ -18,6 +24,11 @@
 }
 
 .page_headline {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.page_headline_sub {
 	@media (min-width: #{$breakpoint}) {
 	}
 }

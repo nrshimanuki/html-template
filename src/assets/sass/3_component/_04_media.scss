@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.media_container {
+	@media (min-width: #{$breakpoint}) {
+	}
+	.media {
+		@media (min-width: #{$breakpoint}) {
+		}
+		&:nth-child(2n) {
+			@media (min-width: #{$breakpoint}) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+	// &::after {
+	// 	@media (min-width: #{$breakpoint}) {
+	// 		width: 24%;
+	// 		display: block;
+	// 		content: '';
+	// 	}
+	// }
+}
+
+.media_wrap {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.media {
+	@media (min-width: #{$breakpoint}) {
+		@include flex();
+	}
+	// &.-reverse {
+	// 	@media (min-width: #{$breakpoint}) {
+	// 		flex-direction: row-reverse;
+	// 	}
+	// }
+}
+
+.media__image {
+	text-align: center;
+	@media (min-width: #{$breakpoint}) {
+		margin: 0;
+		max-width: 250px;
+	}
+	img {
+		@media (min-width: #{$breakpoint}) {
+			width: auto;
+			max-height: 200px;
+		}
+	}
+	+ .media__body {
+		@media (min-width: #{$breakpoint}) {
+			padding: 0 20px;
+		}
+	}
+}
+
+.media__body {
+	@media (min-width: #{$breakpoint}) {
+		flex: 1 1 0%;
+	}
+}
+
+.media__title {
+	padding-left: 10px;
+	padding-right: 10px;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.media__content {
+	padding-left: 30px;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+
+.media__inline {
+	@include flex_inline();
+	@media (min-width: #{$breakpoint}) {
+	}
+}

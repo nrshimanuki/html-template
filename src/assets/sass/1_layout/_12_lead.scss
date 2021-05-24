@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* lead
+------------------------------*/
+.lead {
+	@include area();
+	margin-top: 0;
+	@media (min-width: #{$breakpoint}) {
+		margin-top: 0;
+	}
+}
+
+.lead__section {
+	@include section();
+	@media (min-width: #{$breakpoint}) {
+	}
+}

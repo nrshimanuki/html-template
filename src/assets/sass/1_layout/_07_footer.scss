@@ -3,12 +3,14 @@
 /* site_footer
 ------------------------------*/
 .site_footer {
+	background-color: #ddd;
 	@media (min-width: #{$breakpoint}) {
 	}
 }
 
 .site_footer__inner {
 	padding: 10px;
+	background-color: #FFF;
 	@media (min-width: #{$breakpoint}) {
 		@include content_inner();
 		padding-left: 0;
@@ -38,6 +40,10 @@
 
 .footer_nav__item {
 	@media (min-width: #{$breakpoint}) {
+	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+		}
 	}
 }
 

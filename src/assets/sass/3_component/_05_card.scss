@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.card_container {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card_wrap {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@media (min-width: #{$breakpoint}) {
+		@include flex_wrap();
+	}
+	// &::after {
+	// 	@media (min-width: #{$breakpoint}) {
+	// 		width: 48%;
+	// 		display: block;
+	// 		content: '';
+	// 	}
+	// }
+}
+
+.card__item {
+	margin-top: 30px;
+	@include block_shadow();
+	@media (min-width: #{$breakpoint}) {
+		margin-top: 0;
+		width: 49%;
+	}
+	&:first-child {
+		margin-top: 0;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+	&:nth-child(-n+2) {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+	&:nth-child(2n+1) {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.card__link {
+	display: block;
+	color: $font_color;
+	text-decoration: none;
+	transition: all .3s;
+	@media (min-width: #{$breakpoint}) {
+	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+			opacity: .8;
+		}
+	}
+}
+
+.card__head {
+	display: block;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card__date {
+	display: block;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card__image {
+	display: block;
+	text-align: center;
+	@media (min-width: #{$breakpoint}) {
+	}
+	img {
+		@media (min-width: #{$breakpoint}) {
+			width: auto;
+			max-height: 200px;
+		}
+	}
+}
+
+.card__body {
+	display: block;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card__title {
+	display: block;
+	font-weight: bold;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.card__content {
+	display: block;
+	@media (min-width: #{$breakpoint}) {
+	}
+}

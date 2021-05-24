@@ -25,6 +25,7 @@
 /* Body
 ------------------------------*/
 body {
+	background-color: #aaa;
 	@media (min-width: #{$breakpoint}) {
 		// min-width: $content_width;
 	}
@@ -38,6 +39,18 @@ body {
 	}
 }
 
+a {
+	color: $link_color;
+}
+a:link,
+a:visited {
+	// color: $main_color;
+}
+a:hover,
+a:active {
+	// color: $main_color;
+}
+
 .site {
 	@media (min-width: #{$breakpoint}) {
 	}
@@ -47,13 +60,14 @@ body {
 	padding-top: 50px;
 	@media (min-width: #{$breakpoint}) {
 		padding-top: 0;
-		@include content_inner();
 	}
 }
 
 .site_container {
 	padding: 20px 0;
+	background-color: #ccc;
 	@media (min-width: #{$breakpoint}) {
+		@include content_inner();
 	}
 	&.-row {
 		@media (min-width: #{$breakpoint}) {
@@ -72,12 +86,23 @@ body {
 	}
 }
 
-main {
+.site_main {
+	background-color: #FFF;
 	color: $font_color;
 	font-family: $font;
 	font-size: $font_size_sp;
 	line-height: $line_height;
 	@media (min-width: #{$breakpoint}) {
 		font-size: $font_size;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: 10px;
+		line-height: 1.15;
+	}
+}
+
+.sidebar {
+	background-color: #eee;
+	@media (min-width: #{$breakpoint}) {
 	}
 }

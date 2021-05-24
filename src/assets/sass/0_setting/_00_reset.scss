@@ -14,7 +14,7 @@ html {
 
 body {
 	margin: 0;
-	line-height: 1.1;
+	line-height: 1.15;
 	text-size-adjust: 100%;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -24,17 +24,8 @@ main {
 	display: block;
 }
 
-a {
-	color: $link_color;
-}
-
-a:link,
-a:visited {
-	// color: $main_color;
-}
-a:hover,
-a:active {
-	// color: $main_color;
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
 }
 
 img {
@@ -49,7 +40,7 @@ textarea {
 	font-size: 1.6rem;
 }
 
-input,
+input :not([type="radio"]):not([type="check"]):not([type="range"]),
 select,
 textarea,
 button {
@@ -94,20 +85,14 @@ input {
 	overflow: visible;
 }
 
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
 button {
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
 	border: 0;
-}
-
-label[for],
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-select,
-button {
-	cursor: pointer;
 }
 
 button::-moz-focus-inner,
@@ -123,4 +108,14 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
 	outline: 1px dotted ButtonText;
+}
+
+label,
+label[for],
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+select,
+button {
+	cursor: pointer;
 }

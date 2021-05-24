@@ -2,18 +2,25 @@
 
 /* pagetop
 ------------------------------*/
-#pagetop {
-	display: none;
+.pagetop_wrap {
 	position: fixed;
-	right: 20px;
-	bottom: 50px;
-	z-index: 100;
+	right: 0;
+	bottom: 0;
 	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.pagetop_button {
-	display: block;
+#pagetop {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #fa3;
+	transition: all .3s;
 	@media (min-width: #{$breakpoint}) {
+	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+			opacity: .8;
+		}
 	}
 }

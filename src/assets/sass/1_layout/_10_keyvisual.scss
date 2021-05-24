@@ -3,11 +3,12 @@
 .keyvisual {
 	// position: relative;
 	// z-index: 1;
+	text-align: center;
 	@media (min-width: #{$breakpoint}) {
 	}
 }
 
-.keyvisual_inner {
+.keyvisual__inner {
 	@media (min-width: #{$breakpoint}) {
 	}
 	> img {

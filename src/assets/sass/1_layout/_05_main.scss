@@ -5,6 +5,11 @@
 .site_main {
 	@media (min-width: #{$breakpoint}) {
 	}
+	&.-page_sample {
+		@include bg_sample();
+		@media (min-width: #{$breakpoint}) {
+		}
+}
 }
 
 
@@ -17,25 +22,31 @@
 }
 
 
-/* section
+/* content_inner
 ------------------------------*/
-.section {
-	padding-top: 10px;
-	padding-bottom: 10px;
+.content_inner {
 	@media (min-width: #{$breakpoint}) {
+		@include content_inner();
 	}
 }
 
 
-/* content_inner
+/* area section content
 ------------------------------*/
-.content_inner {
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 100%;
+.area {
+	@include area();
 	@media (min-width: #{$breakpoint}) {
-		@include content_inner();
-		padding-left: 0;
-		padding-right: 0;
+	}
+}
+
+.section {
+	@include section();
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.content {
+	@include content();
+	@media (min-width: #{$breakpoint}) {
 	}
 }

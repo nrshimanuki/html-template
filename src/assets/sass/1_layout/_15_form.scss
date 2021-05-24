@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/* form base
+------------------------------*/
+input[type="text"],
+input[type="search"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+	padding: 5px;
+	border: 1px solid #9FA0A0;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_required
+------------------------------*/
+.form_required {
+	color: #F00;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_group_container
+------------------------------*/
+.form_group_container {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_group_title {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_group_wrap {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_group
+------------------------------*/
+.form_group {
+	@media (min-width: #{$breakpoint}) {
+	}
+	fieldset {
+		@media (min-width: #{$breakpoint}) {
+			display: contents;
+		}
+	}
+	legend {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.form_group__name {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_group__label {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_group__body {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_control
+------------------------------*/
+.form_control {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_control_textarea
+------------------------------*/
+.form_control_textarea {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+
+/* form_control_select
+------------------------------*/
+.form_control_select_wrap {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	background: transparent;
+	@media (min-width: #{$breakpoint}) {
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -1;
+		width: 10px;
+		height: 10px;
+		background-color: #fa3;
+		border-radius: 50%;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.wpcf7-form-control-wrap {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_control_select {
+	padding-right: 1em;
+	background: transparent;
+	@media (min-width: #{$breakpoint}) {
+	}
+	option {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+
+/* form_control_radio
+------------------------------*/
+.form_control_radio {
+	@media (min-width: #{$breakpoint}) {
+	}
+	.wpcf7-list-item {
+		margin-left: 2em;
+		@media (min-width: #{$breakpoint}) {
+		}
+		&:first-child {
+			margin-left: 0;
+			@media (min-width: #{$breakpoint}) {
+			}
+		}
+	}
+}
+
+.form_control_radio_item > label > input[type="radio"],
+.wpcf7-list-item > label > input[type="radio"] {
+	display: none;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_control_radio_item > label > input[type="radio"] + .form_control_radio_text,
+.wpcf7-list-item > label > input[type="radio"] + .wpcf7-list-item-label {
+	display: inline-block;
+	position: relative;
+	padding-left: 2em;
+	@media (min-width: #{$breakpoint}) {
+	}
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background-color: #CCC;
+		border-radius: 50%;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.form_control_radio_item > label > input[type="radio"]:checked + .form_control_radio_text,
+.wpcf7-list-item > label > input[type="radio"]:checked + .wpcf7-list-item-label {
+	@media (min-width: #{$breakpoint}) {
+	}
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 12px;
+		height: 12px;
+		background-color: #fa3;
+		border-radius: 50%;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+
+/* form_control_check
+------------------------------*/
+.form_control_check {
+	@media (min-width: #{$breakpoint}) {
+	}
+	.wpcf7-list-item {
+		margin-left: 2em;
+		@media (min-width: #{$breakpoint}) {
+		}
+		&:first-child {
+			margin-left: 0;
+			@media (min-width: #{$breakpoint}) {
+			}
+		}
+	}
+}
+
+.form_control_check_item > label > input[type="checkbox"],
+.wpcf7-list-item > label > input[type="checkbox"] {
+	display: none;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.form_control_check_item > label > input[type="checkbox"] + .form_control_check_text,
+.wpcf7-list-item > label > input[type="checkbox"] + .wpcf7-list-item-label {
+	display: inline-block;
+	position: relative;
+	padding-left: 2em;
+	@media (min-width: #{$breakpoint}) {
+	}
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background-color: #CCC;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+.form_control_check_item > label > input[type="checkbox"]:checked + .form_control_check_text,
+.wpcf7-list-item > label > input[type="checkbox"]:checked + .wpcf7-list-item-label {
+	@media (min-width: #{$breakpoint}) {
+	}
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -7px;
+		left: 7px;
+		width: 10px;
+		height: 20px;
+		transform: rotate(40deg);
+		border-bottom: 2px solid #fa3;
+		border-right: 2px solid #fa3;
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
+}
+
+
+/* search
+------------------------------*/
+
+/* date
+------------------------------*/
+
+/* range
+------------------------------*/
+
+/* file
+------------------------------*/
+
+/* image submit
+------------------------------*/
+
+
+/* wpcf7-form
+------------------------------*/
+.wpcf7-form {
+	@extend .form !optional;
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+/* err message
+------------------------------*/
+.wpcf7-not-valid-tip {
+	@media (min-width: #{$breakpoint}) {
+	}
+}
+
+.wpcf7-response-output {
+	@media (min-width: #{$breakpoint}) {
+	}
+}

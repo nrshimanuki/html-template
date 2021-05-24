@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+// background
+//------------------------------
+@mixin bg_sample() {
+	background-image: url($img_dir + '/100x100.png');
+	background-position: right top;
+	@media (min-width: #{$breakpoint}) {
+	}
+}

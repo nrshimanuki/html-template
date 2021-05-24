@@ -24,6 +24,10 @@
 .quick_access__item {
 	@media (min-width: #{$breakpoint}) {
 	}
+	&:hover {
+		@media (min-width: #{$breakpoint}) {
+		}
+	}
 }
 
 .quick_access__link {
