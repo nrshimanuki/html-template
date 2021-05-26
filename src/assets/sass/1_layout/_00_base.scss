@@ -27,7 +27,7 @@
 body {
 	background-color: #aaa;
 	@media (min-width: #{$breakpoint}) {
-		// min-width: $content_width;
+		// min-width: $content_width; // ウインドウの幅を縮めて右側が切れる場合
 	}
 	&.-menu_open {
 		overflow: hidden;

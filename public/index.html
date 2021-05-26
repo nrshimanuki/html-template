@@ -4,9 +4,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <meta name="title" content=""> -->
-	<!-- <meta name="description" content=""> -->
+	<title>Title</title>
+	<meta name="description" content="">
 	<!-- <meta name="keywords" content=""> -->
+	<!-- <meta name="title" content=""> -->
 	<!-- <meta property="og:locale" content="ja_JP"> -->
 	<!-- <meta property="og:type" content="website"> -->
 	<!-- <meta property="og:url" content=""> -->
@@ -17,9 +18,8 @@
 	<!-- <meta name="twitter:image" content=""> -->
 	<!-- <meta name="twitter:card" content=""> -->
 	<!-- <meta name="twitter:site" content=""> -->
-	<title>Title</title>
-	<!-- <link rel="icon" href="/assets/img/favicon/favicon.ico"> -->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href=""> -->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+	<!-- <link rel="icon" href="/assets/img/dummy/favicon/favicon.ico"> -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css"> -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"> -->
 	<link rel="stylesheet" href="/assets/css/style.css">
@@ -73,7 +73,7 @@
 	<div class="keyvisual">
 		<div class="slide_area">
 			<div class="slide">
-				<img class="slide_img" src="/assets/img/1920x400.png" alt="">
+				<img class="slide_img" src="/assets/img/dummy/1920x400.png" alt="">
 			</div>
 		</div><!-- slide_area -->
 	</div><!-- keyvisual -->
@@ -87,9 +87,16 @@
 
 	<nav class="bread">
 		<div class="bread__inner">
-			<ol class="bread__list">
-				<li class="bread__item"><a class="bread__link" href="/">Home</a> &gt;</li>
-				<li class="bread__item -current"><span class="bread__text">About</span></li>
+			<ol class="bread__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+				<li class="bread__item" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+					<a class="bread__link" itemprop="item" href="/"><span itemprop="name">Home</span></a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li class="bread__item -current" itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+					&gt;
+					<span class="bread__text" itemprop="item"><span itemprop="name">About</span></span>
+					<meta itemprop="position" content="2" />
+				</li>
 			</ol>
 		</div><!-- bread__inner -->
 	</nav><!-- bread -->
@@ -156,13 +163,13 @@
 						<li class="card__item">
 							<a class="card__link" href="">
 								<span class="card__head">card head</span>
-								<span class="card__image"><img src="/assets/img/600x400.png" alt=""></span>
+								<span class="card__image"><img src="/assets/img/dummy/600x400.png" alt=""></span>
 								<span class="card__body">
 									<span class="card__title">card_title</span>
 									<span class="card__content">
-										<p>text.text.text.text.</p>
-										<p>text.text.text.text.</p>
-										<p>text.text.text.text.</p>
+										<span>text.text.text.text.</span>
+										<span>text.text.text.text.</span>
+										<span>text.text.text.text.</span>
 									</span>
 								</span>
 							</a>
@@ -170,11 +177,11 @@
 						<li class="card__item">
 							<a class="card__link" href="">
 								<span class="card__head">card head</span>
-								<span class="card__image"><img src="/assets/img/400x600.png" alt=""></span>
+								<span class="card__image"><img src="/assets/img/dummy/400x600.png" alt=""></span>
 								<span class="card__body">
 									<span class="card__title">card_title<br>card_title<br>card_title</span>
 									<span class="card__content">
-										<p>text.text.text.text.</p>
+										<span>text.text.text.text.</span>
 									</span>
 								</span>
 							</a>
@@ -182,11 +189,11 @@
 						<li class="card__item">
 							<a class="card__link" href="">
 								<span class="card__head">card head</span>
-								<span class="card__image"><img src="/assets/img/400x600.png" alt=""></span>
+								<span class="card__image"><img src="/assets/img/dummy/400x600.png" alt=""></span>
 								<span class="card__body">
 									<span class="card__title">card_title</span>
 									<span class="card__content">
-										<p>text.text.text.text.</p>
+										<span>text.text.text.text.</span>
 									</span>
 								</span>
 							</a>
@@ -194,11 +201,11 @@
 						<li class="card__item">
 							<a class="card__link" href="">
 								<span class="card__head">card head</span>
-								<span class="card__image"><img src="/assets/img/600x400.png" alt=""></span>
+								<span class="card__image"><img src="/assets/img/dummy/600x400.png" alt=""></span>
 								<span class="card__body">
 									<span class="card__title">card_title</span>
 									<span class="card__content">
-										<p>text.text.text.text.</p>
+										<span>text.text.text.text.</span>
 									</span>
 								</span>
 							</a>
@@ -209,20 +216,20 @@
 					<h3>Media</h3>
 					<div class="media_container">
 						<div class="media">
-							<figure class="media__image"><img src="/assets/img/600x400.png" alt=""></figure>
+							<figure class="media__image"><img src="/assets/img/dummy/600x400.png" alt=""></figure>
 							<div class="media__body">
 								<h4 class="media__title">media_title</h4>
 								<div class="media__content">
-									<p>text.text.text.text.</p>
+									<span>text.text.text.text.</span>
 								</div>
 							</div>
 						</div>
 						<div class="media">
-							<figure class="media__image"><img src="/assets/img/400x600.png" alt=""></figure>
+							<figure class="media__image"><img src="/assets/img/dummy/400x600.png" alt=""></figure>
 							<div class="media__body">
 								<h4 class="media__title">media_title</h4>
 								<div class="media__content">
-									<p>text.text.text.text.</p>
+									<span>text.text.text.text.</span>
 								</div>
 							</div>
 						</div>
@@ -236,14 +243,14 @@
 					<header class="entry__head">
 						<h1 class="entry__title">Hello world!</h1>
 						<div class="entry__meta">
-							<span class="entry__date">0000-00-00</span>
+							<span class="entry__date"><time datatime="20xx-xx-xx">20xx-xx-xx</time></span>
 						</div>
 					</header>
 					<section class="entry__content">
 						<h2 class="primary_headline">Headline 2</h2>
 						<p>Hello world!</p>
 						<figure class="entry__image">
-							<img src="/assets/img/600x400.png" alt="">
+							<img src="/assets/img/dummy/600x400.png" alt="">
 							<figcaption class="entry__caption">Img Caption</figcaption>
 						</figure>
 					</section>
@@ -399,6 +406,7 @@
 									<input type="range" name="form_range" id="form_range" class="form_control_range">
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_name">Text</label><span class="form_required">※</span></dt>
 								<dd class="form_group__body">
@@ -406,6 +414,7 @@
 									<!-- [text* form_name id:form_name class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group -zip">
 								<dt class="form_group__name"><label class="form_group__label" for="form_zip01">Zip</label></dt>
 								<dd class="form_group__body">
@@ -416,6 +425,7 @@
 									<!-- [number form_zip02 id:form_zip02 class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_address01">Address01</label></dt>
 								<dd class="form_group__body">
@@ -428,6 +438,7 @@
 									</div>
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_address02">Address02</label></dt>
 								<dd class="form_group__body">
@@ -435,6 +446,7 @@
 									<!-- [text form_address02 id:form_address02 class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_address03">Address03</label></dt>
 								<dd class="form_group__body">
@@ -442,6 +454,7 @@
 									<!-- [text form_address03 id:form_address03 class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_email">Email</label><span class="form_required">※</span></dt>
 								<dd class="form_group__body">
@@ -449,6 +462,7 @@
 									<!-- [email* form_email id:form_email class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_email_confirm">Email_confirm</label><span class="form_required">※</span></dt>
 								<dd class="form_group__body">
@@ -456,30 +470,35 @@
 									<!-- [email* form_email_confirm id:form_email_confirm class:form_control] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_tel">Tel</label></dt>
 								<dd class="form_group__body">
 									<input type="tel" name="form_tel" id="form_tel" class="form_control_tel">
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_url">URL</label></dt>
 								<dd class="form_group__body">
 									<input type="url" name="form_url" id="form_url" class="form_control_url">
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_password">Password</label></dt>
 								<dd class="form_group__body">
 									<input type="password" name="form_password" id="form_password" class="form_control_password">
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_file">File</label></dt>
 								<dd class="form_group__body">
 									<input type="file" name="form_file" id="form_file" class="form_control_file">
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_textarea">Textarea</label></dt>
 								<dd class="form_group__body">
@@ -487,6 +506,7 @@
 									<!-- [textarea form_textarea id:form_textarea class:form_control_textarea] -->
 								</dd>
 							</dl>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_point">Radio</label></dt>
 								<dd class="form_group__body form_control_radio_wrap">
@@ -509,6 +529,27 @@
 									<!-- [radio form_point id:form_point class:form_control_radio use_label_element default:1 "item1" "item2"] -->
 								</dd>
 							</dl>
+
+							<fieldset class="form_group">
+								<legend class="form_label">Fieldset</legend>
+									<span class="wpcf7-form-control-wrap form_point">
+										<span class="wpcf7-form-control wpcf7-radio form_control_radio" id="form_point">
+											<span class="wpcf7-list-item first">
+												<label>
+													<input type="radio" name="form_point" value="item1" checked="checked">
+													<span class="wpcf7-list-item-label">item1</span>
+												</label>
+											</span>
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="radio" name="form_point" value="item2">
+													<span class="wpcf7-list-item-label">item2</span>
+												</label>
+											</span>
+										</span>
+									</span>
+							</fieldset>
+
 							<div class="form_group -agree">
 								<span class="wpcf7-form-control-wrap form_agree">
 									<span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required form_control_check" id="form_agree">
@@ -522,18 +563,21 @@
 								</span>
 								<!-- [checkbox* form_agree id:form_agree class:form_control_check use_label_element "agree"] -->
 							</div>
+
 							<div class="form_button_wrap">
 								<span class="form_button">
 									<input type="submit" value="submit">
 									<!-- [submit "submit"] -->
 								</span>
 							</div>
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_image">Image submit</label></dt>
 								<dd class="form_group__body">
-									<input type="image" name="form_image" id="form_image" class="form_control_image" src="/assets/img/100x100.png" alt="100x100.png">
+									<input type="image" name="form_image" id="form_image" class="form_control_image" src="/assets/img/dummy/100x100.png" alt="100x100.png">
 								</dd>
 							</dl>
+
 						</form>
 					</div>
 				</section>

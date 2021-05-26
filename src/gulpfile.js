@@ -16,6 +16,8 @@ const srcPath = {
 const destPath = {
 	sass: documentRoot + '/assets/css',
 	img:  documentRoot + '/assets/img',
+	// sass: documentRoot + '/wp/wp-content/themes/theme/assets/css',
+	// img:  documentRoot + '/wp/wp-content/themes/theme/assets/img',
 };
 
 
