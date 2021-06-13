@@ -1,4 +1,5 @@
 						<form class="form wpcf7-form" action="" method="post" accept-charset="utf-8">
+
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_search">Search</label></dt>
 								<dd class="form_group__body">
@@ -110,6 +111,7 @@
 								<dt class="form_group__name"><label class="form_group__label" for="form_tel">Tel</label></dt>
 								<dd class="form_group__body">
 									<input type="tel" name="form_tel" id="form_tel" class="form_control_tel">
+									<!-- [tel form_tel id:form_tel class:form_control_tel] -->
 								</dd>
 							</dl>
 
@@ -209,7 +211,7 @@
 							<dl class="form_group">
 								<dt class="form_group__name"><label class="form_group__label" for="form_image">Image submit</label></dt>
 								<dd class="form_group__body">
-									<input type="image" name="form_image" id="form_image" class="form_control_image" src="/assets/img/100x100.png" alt="100x100.png">
+									<input type="image" name="form_image" id="form_image" class="form_control_image" src="/assets/img/dummy/100x100.png" alt="100x100.png">
 								</dd>
 							</dl>
 
